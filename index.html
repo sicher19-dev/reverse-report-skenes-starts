@@ -54,12 +54,12 @@ h2{font-family:'Saira Condensed';font-weight:800;font-size:clamp(26px,4.5vw,40px
 .tto .meta{font-size:13px;color:var(--muted)}
 .bar{height:8px;background:var(--panel3);border-radius:99px;margin-top:14px;overflow:hidden}
 .bar i{display:block;height:100%;border-radius:99px}
-.tto.t1 .ppa{color:var(--clean)} .tto.t1 .bar i{background:linear-gradient(90deg,#1c6b3d,var(--clean));width:60%}
-.tto.t2 .ppa{color:var(--soft)} .tto.t2 .bar i{background:linear-gradient(90deg,#7a5512,var(--soft));width:70%}
+.tto.t1 .ppa{color:var(--fixable)} .tto.t1 .bar i{background:linear-gradient(90deg,#7a2230,var(--fixable));width:60%}
+.tto.t2 .ppa{color:var(--fixable)} .tto.t2 .bar i{background:linear-gradient(90deg,#7a2230,var(--fixable));width:70%}
 .tto.t3 .ppa{color:var(--clean)} .tto.t3 .bar i{background:linear-gradient(90deg,#1c6b3d,var(--clean));width:72%}
 .tto .rvline{font-family:var(--mono);font-size:12px;margin-top:9px;color:var(--muted)}
 .tto .rvline b{font-family:'Saira Condensed';font-size:16px;font-weight:800}
-.tto.t1 .rvline b{color:var(--clean)} .tto.t2 .rvline b{color:var(--soft)} .tto.t3 .rvline b{color:var(--clean)}
+.tto.t1 .rvline b{color:var(--fixable)} .tto.t2 .rvline b{color:var(--fixable)} .tto.t3 .rvline b{color:var(--clean)}
 .split{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
 .vbox{border:1px solid var(--border);border-radius:12px;padding:16px;background:var(--panel)}
 .vbox .n{font-family:'Saira Condensed';font-weight:800;font-size:40px;line-height:.9}
@@ -173,11 +173,11 @@ footer{padding:34px 0 60px;color:var(--muted2);font-family:var(--mono);font-size
     <h1>Skenes <span class="vs">@</span> Rockies</h1>
     <div class="subline">Coors Field · Sat Jun 20, 2026 · Final: Rockies 2, Pirates 1 · pitch data: Baseball Savant</div>
     <div class="thesis">
-      A quality start at the hardest place in baseball to pitch. <b>6 IP, 8 K, 2 ER</b> against a left-heavy lineup, with a run value of <b>&minus;0.89</b> that says he beat them &mdash; in a park that doesn&rsquo;t let you forget where you are.
+      A quality start at the hardest place in baseball to pitch. <b>6 IP, 8 K, 2 ER</b> against a left-heavy lineup. The raw run value (<b>+0.45</b>) has him a touch behind &mdash; but it&rsquo;s carrying an inside-the-park homer and a Coors double that weren&rsquo;t his to own; strip those and his pitching grades clearly positive (about &minus;1.3).
       Both runs carried a <b>Coors fingerprint</b>: a leadoff line drive the center fielder misplayed into an inside-the-park homer, and an 81-mph grounder that became a double. He wobbled (2 walks, 2 hit batters) but <b>stranded every free runner</b> and finished by punching out four of his last seven.
     </div>
     <div class="datanote">
-      <b>DATA NOTE:</b> pulled before Savant&rsquo;s full export indexed this game. Pitch locations, velocities and <b>batted-ball data (EV / LA / xBA) are from the live game feed</b> and complete. Base-out states are pulled from the official play-by-play, so the run-value figures are a <b>PA-level RE24 estimate</b> rather than Savant&rsquo;s pitch-level delta_run_exp. Say the word once Savant posts and I&rsquo;ll swap in the official numbers.
+      <b>DATA NOTE:</b> the McCarthy leadoff play is recorded as a clean home run with the run <b>earned</b> and <b>zero errors</b> charged in the game, so the official line stays 2 ER; it&rsquo;s graded <b>Noise</b> here on process (a misplayed line drive), not on the scorebook.
     </div>
     <div class="chips">
       <div class="chip"><div class="v">6.0<small> ip</small></div><div class="l">Innings</div></div>
@@ -185,7 +185,7 @@ footer{padding:34px 0 60px;color:var(--muted2);font-family:var(--mono);font-size
       <div class="chip"><div class="v">24</div><div class="l">Batters</div></div>
       <div class="chip hot"><div class="v">8</div><div class="l">Strikeouts</div></div>
       <div class="chip bad"><div class="v">4</div><div class="l">Free Runners*</div></div>
-      <div class="chip hot"><div class="v">&minus;0.89</div><div class="l">Run Value · RE24</div></div>
+      <div class="chip"><div class="v">+0.45</div><div class="l">Run Value · Savant</div></div>
       <div class="chip"><div class="v">27.9</div><div class="l">CSW %</div></div>
       <div class="chip"><div class="v">19</div><div class="l">Whiffs</div></div>
     </div>
@@ -197,20 +197,20 @@ footer{padding:34px 0 60px;color:var(--muted2);font-family:var(--mono);font-size
     <div class="eyebrow">The Macro Read</div>
     <h2>The Coors tax</h2>
     <p class="lead">
-      Run value says he beat this lineup (&minus;0.89). The scoreboard says he lost 2&ndash;1. Both are true, and the gap between them is mostly <b>altitude</b>.
-      Of the four hits, two were defense-and-park manufactured: a <b>104.9-mph line drive</b> the center fielder misplayed into an inside-the-park homer, and an <b>81-mph soft grounder</b> the big outfield turned into a double. He also gave four free runners away (2 BB, 2 HBP) &mdash; the night&rsquo;s real command lapse &mdash; but <b>stranded all four</b>, including escaping a first-and-second, none-out jam with a double play.
+      Raw run value has him slightly behind (+0.45), and the scoreboard says he lost 2&ndash;1. But the lens exists to ask <i>whose</i> run value it is &mdash; and here a big chunk of it isn&rsquo;t his.
+      Of the four hits, two were defense-and-park manufactured: a <b>104.9-mph line drive</b> the center fielder misplayed into an inside-the-park homer (+1.11 alone), and an <b>81-mph soft grounder</b> the big outfield turned into a double (+0.62). Strip those two plays and his pitching grades around <b>&minus;1.3</b>. He also gave four free runners away (2 BB, 2 HBP) &mdash; the night&rsquo;s real command lapse &mdash; but <b>stranded all four</b>, including escaping a first-and-second, none-out jam with a double play.
     </p>
 
     <div class="tto-grid">
       <div class="tto t1"><div class="h">1st Time Through</div><div class="ppa">3.9<small> P/PA</small></div>
         <div class="meta">35 pitches · 9 batters · the HR</div><div class="bar"><i></i></div>
-        <div class="rvline">RE24 <b>&minus;0.19</b></div></div>
+        <div class="rvline">Run value <b>+0.64</b></div></div>
       <div class="tto t2"><div class="h">2nd Time Through</div><div class="ppa">4.6<small> P/PA</small></div>
         <div class="meta">41 pitches · 9 batters · run + escape</div><div class="bar"><i></i></div>
-        <div class="rvline">RE24 <b>+0.04</b></div></div>
+        <div class="rvline">Run value <b>+0.79</b></div></div>
       <div class="tto t3"><div class="h">3rd Time Through</div><div class="ppa">4.7<small> P/PA</small></div>
         <div class="meta">28 pitches · 6 batters · 4 K</div><div class="bar"><i></i></div>
-        <div class="rvline">RE24 <b>&minus;0.74</b></div></div>
+        <div class="rvline">Run value <b>&minus;0.98</b></div></div>
     </div>
 
     <div class="split">
@@ -262,7 +262,7 @@ footer{padding:34px 0 60px;color:var(--muted2);font-family:var(--mono);font-size
   <div class="wrap">
     <div class="eyebrow" style="margin-top:8px">Hitter by Hitter</div>
     <h2>Every plate appearance, run backwards</h2>
-    <p class="lead" style="margin-bottom:6px">Three scorelines per PA: <b>Run value</b> (PA-level RE24 estimate, negative = Skenes gained; Savant&rsquo;s pitch-level number pending), <b>contact quality</b> (EV + xBA), and the <b>process tax</b>. At Coors the lens has to separate the pitcher from the park &mdash; and here, a fair amount of the damage was the park.</p>
+    <p class="lead" style="margin-bottom:6px">Three scorelines per PA: <b>Run value</b> (Savant pitch-level delta_run_exp, negative = Skenes gained), <b>contact quality</b> (EV + xBA), and the <b>process tax</b>. At Coors the lens has to separate the pitcher from the park &mdash; and here, a fair amount of the damage was the park and the defense.</p>
     <div class="legend">
       <span><i style="background:var(--ff)"></i>4-Seam</span><span><i style="background:var(--si)"></i>Sinker</span>
       <span><i style="background:var(--ch)"></i>Changeup</span><span><i style="background:var(--sl)"></i>Slider</span>
@@ -283,23 +283,23 @@ footer{padding:34px 0 60px;color:var(--muted2);font-family:var(--mono);font-size
       <div class="cc"><h3>Fix</h3><p>Command to the inner third &mdash; that&rsquo;s the whole list. The four free runners (two walks and <b>two hit batters</b>) were all misses in to left-handed bats. There was no true mistake pitch: the leadoff run came on a <b>misplayed line drive</b>, not a hung ball. Tighten the command in and the free runners disappear.</p></div>
     </div>
     <div class="math">
-      WHAT THE LENS SAYS (RE24 estimate):<br>
-      &bull; Run value <b>&minus;0.89</b> &mdash; he beat the lineup; <b>&minus;0.74</b> the third time through<br>
+      WHAT THE LENS SAYS (Savant, official):<br>
+      &bull; Run value <b>+0.45 raw</b> &mdash; but <b>+1.7 of that is the inside-park HR and the Coors double</b>; strip those two and he grades ~<b>&minus;1.3</b><br>
       &bull; Damage: an <b>inside-the-park HR on a misplayed 104.9 line drive</b> + an <b>81-mph Coors double</b> &rarr; 2 of 4 hits defense/park-aided<br>
-      &bull; Command: <b>4 free runners</b> (2 BB, 2 HBP), all in to lefties &mdash; <b>all stranded</b>, jam escaped on a DP<br>
-      &rarr; A quality start at the toughest park in baseball, lost 2&ndash;1 to the altitude and a quiet offense.
+      &bull; Command: <b>4 free runners</b> (2 BB, 2 HBP), all in to lefties &mdash; <b>all stranded</b>, jam escaped on a DP (&minus;0.98 the third time through)<br>
+      &rarr; A quality start at the toughest park in baseball, lost 2&ndash;1 to the altitude, the defense, and a quiet offense.
     </div>
   </div>
 </section>
 
 <footer><div class="wrap">
   REVERSE GAME REPORT v1 · Skenes @ COL · 2026-06-20 · game_pk 824342 · No Brand Baseball Analytics<br>
-  Pitch &amp; batted-ball data: live game feed (Baseball Savant). Run value = PA-level RE24 estimate from official play-by-play base-out states, pending Savant&rsquo;s pitch-level delta_run_exp.
-  Verdicts grade process independent of outcome; &ldquo;Noise&rdquo; = good pitch, no help (park/luck); &ldquo;Soft&rdquo; = earned hard contact.
+  Pitch &amp; batted-ball data: Baseball Savant. Run value = Savant pitch-level delta_run_exp (official). McCarthy leadoff play officially a home run, run earned, no error charged; graded Noise on process.
+  Verdicts grade process independent of outcome; &ldquo;Noise&rdquo; = good pitch, no help (park/defense/luck); &ldquo;Soft&rdquo; = earned hard contact.
 </div></footer>
 
 <script>
-const PITCH={"1":{"seq":[["FF",94.8,-1.013,2.576],["FF",96.4,0.144,3.161],["FF",95.6,-1.241,3.959],["FF",95.0,-0.231,2.869]],"re":1.0,"szt":3.23,"szb":1.63,"ev":104.9,"la":18,"xba":0.52,"hr":341},"2":{"seq":[["FF",96.7,-0.305,3.268],["FF",96.9,0.284,3.479],["FF",96.1,-0.361,3.17]],"re":-0.227,"szt":3.2,"szb":1.62,"ev":83.6,"la":59,"xba":0.02},"3":{"seq":[["CH",89.1,-0.048,1.794],["FF",96.2,0.535,3.398],["CH",88.6,2.041,-0.065]],"re":0.255,"szt":3.42,"szb":1.73},"4":{"seq":[["ST",85.3,0.665,2.2],["FF",96.3,0.725,1.937]],"re":-0.285,"szt":3.18,"szb":1.6,"ev":91.9,"la":32,"xba":0.05},"5":{"seq":[["CH",88.2,-1.118,1.919],["CH",89.0,0.782,0.972],["FF",97.1,0.712,1.761],["FF",96.9,-0.201,1.952],["FF",96.1,0.056,3.634]],"re":-0.224,"szt":3.16,"szb":1.59},"6":{"seq":[["SI",96.5,-0.807,3.314],["FF",96.1,0.202,3.768],["FF",95.9,0.155,2.739]],"re":0.619,"szt":3.29,"szb":1.66,"ev":105.9,"la":12,"xba":0.96},"7":{"seq":[["FF",96.5,-0.27,3.372],["FF",96.5,-0.311,3.881],["CH",88.7,2.184,0.102],["FF",92.4,1.995,1.938],["SL",87.8,0.871,2.889],["FF",96.0,-0.339,3.108]],"re":-0.436,"szt":3.23,"szb":1.63,"ev":98.4,"la":30,"xba":0.37},"8":{"seq":[["ST",84.9,-0.54,1.507],["ST",83.9,-0.416,2.906],["FF",96.1,-1.286,4.155],["ST",85.2,1.414,0.79]],"re":-0.664,"szt":3.22,"szb":1.62},"9":{"seq":[["SL",85.1,-0.758,0.776],["FF",96.4,-0.274,4.147],["CH",88.4,0.329,0.388],["FF",96.1,-0.235,1.955],["FF",96.1,-0.569,2.77]],"re":-0.227,"szt":3.34,"szb":1.69,"ev":101.5,"la":37,"xba":0.25},"10":{"seq":[["FF",96.6,-1.009,3.699],["CH",88.7,-0.507,2.228],["SL",86.1,0.751,1.11],["SL",85.8,0.557,1.493],["SL",87.4,1.974,0.024],["CH",88.6,-0.995,2.104]],"re":0.41,"szt":3.23,"szb":1.63,"ev":81.7,"la":3,"xba":0.32},"11":{"seq":[["CH",88.1,-1.431,2.231],["FF",96.4,-0.116,3.173],["FF",95.8,-0.195,1.802],["FF",97.5,0.187,2.411],["FF",96.8,-0.343,3.197]],"re":-0.345,"szt":3.2,"szb":1.62},"12":{"seq":[["FF",96.8,-0.472,3.938],["FF",96.8,-0.351,2.382],["CH",88.8,0.265,0.76],["FF",97.0,-0.486,2.818]],"re":0.905,"szt":3.42,"szb":1.73,"ev":92.5,"la":10,"xba":0.67},"13":{"seq":[["ST",85.4,1.171,2.589],["SL",86.1,2.964,0.527],["FF",97.0,-0.31,3.125],["FF",95.8,-0.75,3.044],["ST",84.5,-0.123,1.118]],"re":-0.224,"szt":3.18,"szb":1.6},"14":{"seq":[["CH",89.0,0.186,0.76],["SL",86.7,0.306,2.478],["CH",88.0,-1.635,2.696],["FF",96.8,-0.979,2.794],["FF",96.6,-1.241,3.107]],"re":0.378,"szt":3.16,"szb":1.59},"15":{"seq":[["FF",97.5,-0.145,2.603],["CH",88.4,-0.55,2.22],["SL",88.7,1.726,0.017]],"re":0.578,"szt":3.29,"szb":1.66},"16":{"seq":[["CH",88.8,-1.167,2.008],["FF",98.6,0.436,2.824]],"re":-0.553,"szt":3.23,"szb":1.63,"ev":86.8,"la":24,"xba":0.16},"17":{"seq":[["ST",85.3,1.115,2.415],["FF",97.0,0.419,3.705],["FF",96.3,0.428,2.316]],"re":-0.884,"szt":3.22,"szb":1.62,"ev":103.9,"la":-7,"xba":0.37},"18":{"seq":[["FF",95.7,0.47,3.303],["FF",95.4,0.501,4.026],["CH",89.0,-0.157,0.844],["CH",88.8,-0.029,-0.103],["CH",87.4,-1.167,2.464],["SL",87.3,0.39,1.686],["CH",90.2,0.301,0.575],["CH",88.8,0.298,0.905]],"re":-0.227,"szt":3.34,"szb":1.69},"19":{"seq":[["SL",87.3,-0.312,2.694]],"re":-0.156,"szt":3.23,"szb":1.63,"ev":92.2,"la":-12,"xba":0.21},"20":{"seq":[["CH",88.5,-0.662,1.678],["CH",87.9,-0.941,2.205],["FF",96.6,-0.712,3.528],["FF",96.1,-1.94,3.137],["CH",90.0,-0.77,1.244],["FF",96.6,-1.589,4.021],["CH",88.5,-1.182,1.08]],"re":-0.098,"szt":3.2,"szb":1.62},"21":{"seq":[["FF",97.3,-0.772,3.985],["FF",95.7,-0.012,3.465],["FF",97.4,-0.437,3.869],["FF",96.7,0.546,3.276],["SL",87.9,2.212,-0.379],["CH",89.5,0.884,0.586]],"re":-0.227,"szt":3.42,"szb":1.73},"22":{"seq":[["FF",97.5,-0.602,3.986],["FF",97.5,0.36,2.968],["SL",85.6,1.181,0.308],["ST",85.6,1.716,1.022],["ST",85.6,0.931,1.366]],"re":-0.156,"szt":3.18,"szb":1.6},"23":{"seq":[["CH",88.0,0.389,0.539],["CH",88.4,-0.566,2.233],["FF",97.8,0.027,4.177],["FF",97.0,-0.69,3.517],["CH",89.1,0.872,0.989]],"re":0.126,"szt":3.16,"szb":1.59},"24":{"seq":[["CH",88.7,0.463,1.002],["FF",97.3,0.062,3.262],["CH",88.3,-0.638,2.522],["FF",97.1,0.236,3.021]],"re":-0.224,"szt":3.29,"szb":1.66,"ev":73.0,"la":43,"xba":0.28}};
+const PITCH={"1":{"seq":[["FF",94.8,-1.013,2.576],["FF",96.4,0.144,3.161],["FF",95.6,-1.241,3.959],["FF",95.0,-0.231,2.869]],"re":1.114,"szt":3.23,"szb":1.63,"ev":104.9,"la":18,"xba":0.52,"hr":341},"2":{"seq":[["FF",96.7,-0.305,3.268],["FF",96.9,0.284,3.479],["FF",96.1,-0.361,3.17]],"re":-0.262,"szt":3.2,"szb":1.62,"ev":83.6,"la":59,"xba":0.02},"3":{"seq":[["CH",89.1,-0.048,1.794],["FF",96.2,0.535,3.398],["CH",88.6,2.041,-0.065]],"re":0.419,"szt":3.42,"szb":1.73},"4":{"seq":[["ST",85.3,0.665,2.2],["FF",96.3,0.725,1.937]],"re":-0.257,"szt":3.18,"szb":1.6,"ev":91.9,"la":32,"xba":0.05},"5":{"seq":[["CH",88.2,-1.118,1.919],["CH",89.0,0.782,0.972],["FF",97.1,0.712,1.761],["FF",96.9,-0.201,1.952],["FF",96.1,0.056,3.634]],"re":-0.279,"szt":3.16,"szb":1.59},"6":{"seq":[["SI",96.5,-0.807,3.314],["FF",96.1,0.202,3.768],["FF",95.9,0.155,2.739]],"re":0.717,"szt":3.29,"szb":1.66,"ev":105.9,"la":12,"xba":0.96},"7":{"seq":[["FF",96.5,-0.27,3.372],["FF",96.5,-0.311,3.881],["CH",88.7,2.184,0.102],["FF",92.4,1.995,1.938],["SL",87.8,0.871,2.889],["FF",96.0,-0.339,3.108]],"re":-0.288,"szt":3.23,"szb":1.63,"ev":98.4,"la":30,"xba":0.37},"8":{"seq":[["ST",84.9,-0.54,1.507],["ST",83.9,-0.416,2.906],["FF",96.1,-1.286,4.155],["ST",85.2,1.414,0.79]],"re":-0.259,"szt":3.22,"szb":1.62},"9":{"seq":[["SL",85.1,-0.758,0.776],["FF",96.4,-0.274,4.147],["CH",88.4,0.329,0.388],["FF",96.1,-0.235,1.955],["FF",96.1,-0.569,2.77]],"re":-0.263,"szt":3.34,"szb":1.69,"ev":101.5,"la":37,"xba":0.25},"10":{"seq":[["FF",96.6,-1.009,3.699],["CH",88.7,-0.507,2.228],["SL",86.1,0.751,1.11],["SL",85.8,0.557,1.493],["SL",87.4,1.974,0.024],["CH",88.6,-0.995,2.104]],"re":0.615,"szt":3.23,"szb":1.63,"ev":81.7,"la":3,"xba":0.32},"11":{"seq":[["CH",88.1,-1.431,2.231],["FF",96.4,-0.116,3.173],["FF",95.8,-0.195,1.802],["FF",97.5,0.187,2.411],["FF",96.8,-0.343,3.197]],"re":-0.277,"szt":3.2,"szb":1.62},"12":{"seq":[["FF",96.8,-0.472,3.938],["FF",96.8,-0.351,2.382],["CH",88.8,0.265,0.76],["FF",97.0,-0.486,2.818]],"re":0.691,"szt":3.42,"szb":1.73,"ev":92.5,"la":10,"xba":0.67},"13":{"seq":[["ST",85.4,1.171,2.589],["SL",86.1,2.964,0.527],["FF",97.0,-0.31,3.125],["FF",95.8,-0.75,3.044],["ST",84.5,-0.123,1.118]],"re":-0.279,"szt":3.18,"szb":1.6},"14":{"seq":[["CH",89.0,0.186,0.76],["SL",86.7,0.306,2.478],["CH",88.0,-1.635,2.696],["FF",96.8,-0.979,2.794],["FF",96.6,-1.241,3.107]],"re":0.452,"szt":3.16,"szb":1.59},"15":{"seq":[["FF",97.5,-0.145,2.603],["CH",88.4,-0.55,2.22],["SL",88.7,1.726,0.017]],"re":0.436,"szt":3.29,"szb":1.66},"16":{"seq":[["CH",88.8,-1.167,2.008],["FF",98.6,0.436,2.824]],"re":-0.277,"szt":3.23,"szb":1.63,"ev":86.8,"la":24,"xba":0.16},"17":{"seq":[["ST",85.3,1.115,2.415],["FF",97.0,0.419,3.705],["FF",96.3,0.428,2.316]],"re":-0.311,"szt":3.22,"szb":1.62,"ev":103.9,"la":-7,"xba":0.37},"18":{"seq":[["FF",95.7,0.47,3.303],["FF",95.4,0.501,4.026],["CH",89.0,-0.157,0.844],["CH",88.8,-0.029,-0.103],["CH",87.4,-1.167,2.464],["SL",87.3,0.39,1.686],["CH",90.2,0.301,0.575],["CH",88.8,0.298,0.905]],"re":-0.262,"szt":3.34,"szb":1.69},"19":{"seq":[["SL",87.3,-0.312,2.694]],"re":-0.262,"szt":3.23,"szb":1.63,"ev":92.2,"la":-12,"xba":0.21},"20":{"seq":[["CH",88.5,-0.662,1.678],["CH",87.9,-0.941,2.205],["FF",96.6,-0.712,3.528],["FF",96.1,-1.94,3.137],["CH",90.0,-0.77,1.244],["FF",96.6,-1.589,4.021],["CH",88.5,-1.182,1.08]],"re":-0.26,"szt":3.2,"szb":1.62},"21":{"seq":[["FF",97.3,-0.772,3.985],["FF",95.7,-0.012,3.465],["FF",97.4,-0.437,3.869],["FF",96.7,0.546,3.276],["SL",87.9,2.212,-0.379],["CH",89.5,0.884,0.586]],"re":-0.262,"szt":3.42,"szb":1.73},"22":{"seq":[["FF",97.5,-0.602,3.986],["FF",97.5,0.36,2.968],["SL",85.6,1.181,0.308],["ST",85.6,1.716,1.022],["ST",85.6,0.931,1.366]],"re":-0.261,"szt":3.18,"szb":1.6},"23":{"seq":[["CH",88.0,0.389,0.539],["CH",88.4,-0.566,2.233],["FF",97.8,0.027,4.177],["FF",97.0,-0.69,3.517],["CH",89.1,0.872,0.989]],"re":0.342,"szt":3.16,"szb":1.59},"24":{"seq":[["CH",88.7,0.463,1.002],["FF",97.3,0.062,3.262],["CH",88.3,-0.638,2.522],["FF",97.1,0.236,3.021]],"re":-0.278,"szt":3.29,"szb":1.66,"ev":73.0,"la":43,"xba":0.28}};
 
 const DATA=[
 {pa:1,inn:1,tto:1,nm:'Jake McCarthy',h:'L',res:'Inside-Park HR',rt:'hr',
