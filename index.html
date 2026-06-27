@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reverse Report · Skenes @ COL · 6.20.26</title>
+<title>Reverse Report · Skenes vs CIN · 6.26.26</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600;700;800&family=Saira:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -21,20 +21,17 @@
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'Saira',sans-serif;font-weight:400;line-height:1.55;
   -webkit-font-smoothing:antialiased;
-  background-image:radial-gradient(circle at 15% -5%, rgba(253,184,39,.06), transparent 45%),radial-gradient(circle at 90% 0%, rgba(91,141,239,.05), transparent 40%);
+  background-image:radial-gradient(circle at 15% -5%, rgba(253,184,39,.06), transparent 45%),radial-gradient(circle at 90% 0%, rgba(226,59,78,.05), transparent 40%);
   background-attachment:fixed;}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
 header{padding:54px 0 30px;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
 .kicker{font-family:'Saira Condensed';font-weight:700;letter-spacing:.34em;text-transform:uppercase;font-size:12px;color:var(--gold)}
 .kicker .rev{color:var(--muted2)}
-.livepill{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);border:1px solid rgba(244,165,42,.4);background:rgba(244,165,42,.1);border-radius:99px;padding:3px 10px;margin-left:10px;vertical-align:middle}
 h1{font-family:'Saira Condensed';font-weight:800;font-size:clamp(38px,7vw,76px);line-height:.92;letter-spacing:-.01em;text-transform:uppercase;margin:10px 0 4px}
 h1 .vs{color:var(--muted2);font-weight:500}
 .subline{color:var(--muted);font-size:15px;font-family:var(--mono);letter-spacing:.02em}
 .thesis{margin-top:22px;max-width:800px;font-size:18px;color:#cfd6dd;border-left:3px solid var(--gold);padding:4px 0 4px 18px}
 .thesis b{color:#fff;font-weight:600}
-.datanote{margin-top:16px;font-family:var(--mono);font-size:12px;color:var(--muted2);background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:11px 14px;max-width:800px;line-height:1.6}
-.datanote b{color:var(--gold)}
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
 .chip{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:11px 15px;min-width:92px}
 .chip .v{font-family:'Saira Condensed';font-weight:800;font-size:27px;line-height:1;color:#fff}
@@ -54,25 +51,25 @@ h2{font-family:'Saira Condensed';font-weight:800;font-size:clamp(26px,4.5vw,40px
 .tto .meta{font-size:13px;color:var(--muted)}
 .bar{height:8px;background:var(--panel3);border-radius:99px;margin-top:14px;overflow:hidden}
 .bar i{display:block;height:100%;border-radius:99px}
-.tto.t1 .ppa{color:var(--fixable)} .tto.t1 .bar i{background:linear-gradient(90deg,#7a2230,var(--fixable));width:60%}
-.tto.t2 .ppa{color:var(--fixable)} .tto.t2 .bar i{background:linear-gradient(90deg,#7a2230,var(--fixable));width:70%}
-.tto.t3 .ppa{color:var(--clean)} .tto.t3 .bar i{background:linear-gradient(90deg,#1c6b3d,var(--clean));width:72%}
+.tto.t1 .ppa{color:var(--fixable)} .tto.t1 .bar i{background:linear-gradient(90deg,#7a2230,var(--fixable));width:100%}
+.tto.t2 .ppa{color:var(--clean)} .tto.t2 .bar i{background:linear-gradient(90deg,#1c6b3d,var(--clean));width:62%}
+.tto.t3 .ppa{color:var(--clean)} .tto.t3 .bar i{background:linear-gradient(90deg,#1c6b3d,var(--clean));width:50%}
 .tto .rvline{font-family:var(--mono);font-size:12px;margin-top:9px;color:var(--muted)}
 .tto .rvline b{font-family:'Saira Condensed';font-size:16px;font-weight:800}
-.tto.t1 .rvline b{color:var(--fixable)} .tto.t2 .rvline b{color:var(--fixable)} .tto.t3 .rvline b{color:var(--clean)}
+.tto.t1 .rvline b{color:var(--fixable)} .tto.t2 .rvline b{color:var(--clean)} .tto.t3 .rvline b{color:var(--clean)}
 .split{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
 .vbox{border:1px solid var(--border);border-radius:12px;padding:16px;background:var(--panel)}
 .vbox .n{font-family:'Saira Condensed';font-weight:800;font-size:40px;line-height:.9}
 .vbox .t{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;margin-top:4px;color:var(--muted)}
 .vbox .d{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.4}
 .vbox.fixable .n{color:var(--fixable)} .vbox.soft .n{color:var(--soft)} .vbox.noise .n{color:var(--noise)} .vbox.clean .n{color:var(--clean)}
-.vbox.fixable{border-color:rgba(226,59,78,.3)}
+.vbox.noise{border-color:rgba(91,141,239,.3)}
 .contact{margin-top:26px;background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:18px 20px}
 .contact h3{font-family:'Saira Condensed';font-weight:700;font-size:18px;text-transform:uppercase;color:#fff;margin-bottom:14px}
 .bbrow{display:flex;flex-wrap:wrap;gap:7px}
 .bbpip{font-family:var(--mono);font-size:11px;padding:5px 9px;border-radius:7px;border:1px solid var(--border);display:flex;gap:6px;align-items:center}
 .bbpip .ev{font-weight:700}
-.bbpip.hit{border-color:rgba(226,59,78,.4)} .bbpip.out{opacity:.72} .bbpip.hr{border-color:var(--fixable);background:rgba(226,59,78,.12)}
+.bbpip.hit{border-color:rgba(226,59,78,.4)} .bbpip.out{opacity:.72}
 .bbpip.hard .ev{color:var(--fixable)} .bbpip.med .ev{color:var(--soft)} .bbpip.soft .ev{color:var(--clean)}
 .bbnote{font-size:13px;color:var(--muted);margin-top:13px}.bbnote b{color:#dfe4ea}
 .threads{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
@@ -98,7 +95,6 @@ h2{font-family:'Saira Condensed';font-weight:800;font-size:clamp(26px,4.5vw,40px
 .pa{background:var(--panel);border:1px solid var(--border);border-radius:14px;margin-bottom:14px;overflow:hidden;transition:.35s;animation:rise .5s both}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 .pa:hover{border-color:var(--border2)}
-.pa.hrpa{border-color:rgba(226,59,78,.45)}
 .pa-top{display:flex;align-items:flex-start;gap:14px;padding:17px 20px 0}
 .pa-num{font-family:'Saira Condensed';font-weight:800;font-size:13px;color:var(--muted2);letter-spacing:.08em;border:1px solid var(--border);border-radius:7px;padding:5px 9px;white-space:nowrap;margin-top:2px;text-align:center}
 .pa-id{flex:1;min-width:0}
@@ -108,7 +104,7 @@ h2{font-family:'Saira Condensed';font-weight:800;font-size:clamp(26px,4.5vw,40px
 .pa-res{text-align:right;white-space:nowrap}
 .pa-res .r{font-family:'Saira Condensed';font-weight:700;font-size:17px;text-transform:uppercase}
 .pa-res .pc{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:3px}
-.r.k{color:var(--clean)} .r.out{color:#aeb6bf} .r.hit{color:var(--fixable)} .r.bb{color:var(--soft)} .r.hr{color:var(--fixable)} .r.hbp{color:var(--soft)} .r.dp{color:var(--clean)}
+.r.k{color:var(--clean)} .r.out{color:#aeb6bf} .r.hit{color:var(--fixable)} .r.bb{color:var(--soft)} .r.sf{color:#aeb6bf}
 .midrow{display:flex;gap:18px;padding:14px 20px 6px;align-items:flex-start}
 .zonebox{flex:0 0 158px;text-align:center}
 .zonebox svg{display:block;background:var(--panel2);border:1px solid var(--border);border-radius:10px}
@@ -119,7 +115,6 @@ h2{font-family:'Saira Condensed';font-weight:800;font-size:clamp(26px,4.5vw,40px
 .pill{font-family:var(--mono);font-weight:500;font-size:12px;padding:5px 9px;border-radius:7px;border:1px solid;display:flex;align-items:center;gap:5px;position:relative}
 .pill .pt{font-weight:700} .pill .vl{opacity:.72;font-size:11px}
 .pill.final{box-shadow:0 0 0 2px rgba(255,255,255,.14)}
-.pill.finalhr{box-shadow:0 0 0 2px var(--fixable)}
 .pill .ord{position:absolute;top:-7px;left:-5px;font-size:8.5px;background:var(--bg);border:1px solid var(--border);border-radius:50%;width:15px;height:15px;display:flex;align-items:center;justify-content:center;color:var(--muted2)}
 .t-FF{color:var(--ff);border-color:rgba(226,59,78,.45);background:rgba(226,59,78,.1)}
 .t-SI{color:var(--si);border-color:rgba(246,137,43,.45);background:rgba(246,137,43,.1)}
@@ -131,7 +126,6 @@ h2{font-family:'Saira Condensed';font-weight:800;font-size:clamp(26px,4.5vw,40px
 .bbtag{display:inline-flex;gap:8px;align-items:center;margin-top:13px;font-family:var(--mono);font-size:11px;color:var(--muted);background:var(--panel3);border:1px solid var(--border);border-radius:7px;padding:5px 10px}
 .bbtag b{font-family:'Saira Condensed';font-weight:800;font-size:14px}
 .bbtag.hard b{color:var(--fixable)} .bbtag.med b{color:var(--soft)} .bbtag.soft b{color:var(--clean)}
-.bbtag.hrtag{border-color:rgba(226,59,78,.4);color:#f0b3ba}
 .anat{padding:8px 20px 20px}
 .row{display:grid;grid-template-columns:118px 1fr;gap:14px;padding:11px 0;border-top:1px solid var(--border)}
 .row:first-child{border-top:none}
@@ -168,26 +162,22 @@ footer{padding:34px 0 60px;color:var(--muted2);font-family:var(--mono);font-size
 
 <header>
   <div class="wrap">
-    <div class="kicker">Reverse Game Report &nbsp;<span class="rev">// post-game, run backwards</span>
-      <span class="livepill">Coors Field · 5,200 ft</span></div>
-    <h1>Skenes <span class="vs">@</span> Rockies</h1>
-    <div class="subline">Coors Field · Sat Jun 20, 2026 · Final: Rockies 2, Pirates 1 · pitch data: Baseball Savant</div>
+    <div class="kicker">Reverse Game Report &nbsp;<span class="rev">// post-game, run backwards</span></div>
+    <h1>Skenes <span class="vs">vs</span> Reds</h1>
+    <div class="subline">PNC Park · Fri Jun 26, 2026 · Final: Reds 6, Pirates 4 · pitch data: Baseball Savant</div>
     <div class="thesis">
-      A quality start at the hardest place in baseball to pitch. <b>6 IP, 8 K, 2 ER</b> against a left-heavy lineup. The raw run value (<b>+0.45</b>) has him a touch behind &mdash; but it&rsquo;s carrying an inside-the-park homer and a Coors double that weren&rsquo;t his to own; strip those and his pitching grades clearly positive (about &minus;1.3).
-      Both runs carried a <b>Coors fingerprint</b>: a leadoff line drive the center fielder misplayed into an inside-the-park homer, and an 81-mph grounder that became a double. He wobbled (2 walks, 2 hit batters) but <b>stranded every free runner</b> and finished by punching out four of his last seven.
-    </div>
-    <div class="datanote">
-      <b>DATA NOTE:</b> the McCarthy leadoff play is recorded as a clean home run with the run <b>earned</b> and <b>zero errors</b> charged in the game, so the official line stays 2 ER; it&rsquo;s graded <b>Noise</b> here on process (a misplayed line drive), not on the scorebook.
+      The line &mdash; <b>5 IP, 4 ER</b> &mdash; reads like a clunker. The pitches say the whole start was <b>one inning</b>. All four runs scored in the 2nd, and even by run value he came out <b>slightly ahead (&minus;0.34)</b> because the 3rd through 5th were dominant.
+      And the crooked number was <b>softer than it looked</b>: two of the rally&rsquo;s singles left the bat at 73 and 80 mph, two of the runs scored on sacrifice flies, and the leadoff hit of the game was a deflection. <b>One genuinely hard knock</b> did real damage. The rest snowballed.
     </div>
     <div class="chips">
-      <div class="chip"><div class="v">6.0<small> ip</small></div><div class="l">Innings</div></div>
-      <div class="chip"><div class="v">104</div><div class="l">Pitches</div></div>
-      <div class="chip"><div class="v">24</div><div class="l">Batters</div></div>
-      <div class="chip hot"><div class="v">8</div><div class="l">Strikeouts</div></div>
-      <div class="chip bad"><div class="v">4</div><div class="l">Free Runners*</div></div>
-      <div class="chip"><div class="v">+0.45</div><div class="l">Run Value · Savant</div></div>
-      <div class="chip"><div class="v">27.9</div><div class="l">CSW %</div></div>
-      <div class="chip"><div class="v">19</div><div class="l">Whiffs</div></div>
+      <div class="chip"><div class="v">5.0<small> ip</small></div><div class="l">Innings</div></div>
+      <div class="chip"><div class="v">96</div><div class="l">Pitches</div></div>
+      <div class="chip"><div class="v">23</div><div class="l">Batters</div></div>
+      <div class="chip hot"><div class="v">7</div><div class="l">Strikeouts</div></div>
+      <div class="chip bad"><div class="v">4</div><div class="l">Earned Runs</div></div>
+      <div class="chip hot"><div class="v">&minus;0.34</div><div class="l">Run Value · Savant</div></div>
+      <div class="chip"><div class="v">29.2</div><div class="l">CSW %</div></div>
+      <div class="chip"><div class="v">13</div><div class="l">Whiffs</div></div>
     </div>
   </div>
 </header>
@@ -195,35 +185,35 @@ footer{padding:34px 0 60px;color:var(--muted2);font-family:var(--mono);font-size
 <section>
   <div class="wrap">
     <div class="eyebrow">The Macro Read</div>
-    <h2>The Coors tax</h2>
+    <h2>The whole start was one inning</h2>
     <p class="lead">
-      Raw run value has him slightly behind (+0.45), and the scoreboard says he lost 2&ndash;1. But the lens exists to ask <i>whose</i> run value it is &mdash; and here a big chunk of it isn&rsquo;t his.
-      Of the four hits, two were defense-and-park manufactured: a <b>104.9-mph line drive</b> the center fielder misplayed into an inside-the-park homer (+1.11 alone), and an <b>81-mph soft grounder</b> the big outfield turned into a double (+0.62). Strip those two plays and his pitching grades around <b>&minus;1.3</b>. He also gave four free runners away (2 BB, 2 HBP) &mdash; the night&rsquo;s real command lapse &mdash; but <b>stranded all four</b>, including escaping a first-and-second, none-out jam with a double play.
+      Four earned runs across five innings is an ugly line. But the run value (&minus;0.34) says he was a <b>net positive</b> &mdash; because the damage was a single frame. The 2nd inning alone was a <b>+2.17 run-value hole</b>; the 3rd, 4th and 5th were <b>&minus;2.50 combined</b>, a stretch where he struck out the side in the 4th and retired nine of his last ten.
+      Reverse the lens on the 2nd and it gets softer still: a hard double and one hard single, yes &mdash; but also <b>two sub-80-mph singles</b> that found grass, a <b>bases-loading walk</b>, and two <b>sac-fly</b> runs. Only one of the four runs came on a ball that was truly squared.
     </p>
 
     <div class="tto-grid">
-      <div class="tto t1"><div class="h">1st Time Through</div><div class="ppa">3.9<small> P/PA</small></div>
-        <div class="meta">35 pitches · 9 batters · the HR</div><div class="bar"><i></i></div>
-        <div class="rvline">Run value <b>+0.64</b></div></div>
-      <div class="tto t2"><div class="h">2nd Time Through</div><div class="ppa">4.6<small> P/PA</small></div>
-        <div class="meta">41 pitches · 9 batters · run + escape</div><div class="bar"><i></i></div>
-        <div class="rvline">Run value <b>+0.79</b></div></div>
-      <div class="tto t3"><div class="h">3rd Time Through</div><div class="ppa">4.7<small> P/PA</small></div>
-        <div class="meta">28 pitches · 6 batters · 4 K</div><div class="bar"><i></i></div>
-        <div class="rvline">Run value <b>&minus;0.98</b></div></div>
+      <div class="tto t1"><div class="h">1st Time Through</div><div class="ppa">4.9<small> P/PA</small></div>
+        <div class="meta">44 pitches · 9 batters · the 4-run 2nd</div><div class="bar"><i></i></div>
+        <div class="rvline">Run value <b>+2.17</b></div></div>
+      <div class="tto t2"><div class="h">2nd Time Through</div><div class="ppa">4.0<small> P/PA</small></div>
+        <div class="meta">36 pitches · 9 batters · settled in</div><div class="bar"><i></i></div>
+        <div class="rvline">Run value <b>&minus;1.18</b></div></div>
+      <div class="tto t3"><div class="h">3rd Time Through</div><div class="ppa">3.2<small> P/PA</small></div>
+        <div class="meta">16 pitches · 5 batters · 1-2-3 finish</div><div class="bar"><i></i></div>
+        <div class="rvline">Run value <b>&minus;1.33</b></div></div>
     </div>
 
     <div class="split">
-      <div class="vbox fixable"><div class="n">4</div><div class="t">Fixable</div><div class="d">Four free runners &mdash; two walks and two hit batters &mdash; all command misses in to the lefties.</div></div>
-      <div class="vbox soft"><div class="n">2</div><div class="t">Soft-Fixable</div><div class="d">A crushed 106-mph double and the RBI single &mdash; earned contact.</div></div>
-      <div class="vbox noise"><div class="n">2</div><div class="t">Noise</div><div class="d">The inside-the-park HR on a misplayed line drive, and the 81-mph grounder only Coors turns into a double.</div></div>
-      <div class="vbox clean"><div class="n">16</div><div class="t">Clean</div><div class="d">The eight K&rsquo;s, the double-play escape, and a stack of hard contact that found gloves.</div></div>
+      <div class="vbox fixable"><div class="n">2</div><div class="t">Fixable</div><div class="d">Two walks in the 2nd &mdash; one loaded the bases, the other re-loaded them. The avoidable links in the chain.</div></div>
+      <div class="vbox soft"><div class="n">3</div><div class="t">Soft-Fixable</div><div class="d">The two genuinely hard hits (a 100-mph double, a 105-mph single) and a later stranded single &mdash; earned.</div></div>
+      <div class="vbox noise"><div class="n">3</div><div class="t">Noise</div><div class="d">The deflected leadoff single and the two sub-80-mph singles that found holes.</div></div>
+      <div class="vbox clean"><div class="n">15</div><div class="t">Clean</div><div class="d">Everything outside the 2nd &mdash; the seven K&rsquo;s, the sac-fly outs, and a 1-2-3 fifth.</div></div>
     </div>
 
     <div class="contact">
       <h3>Every ball in play, by exit velocity</h3>
       <div class="bbrow" id="bbrow"></div>
-      <div class="bbnote">The Rockies squared him up &mdash; <b>105.9, 104.9, 103.9, 101.5</b> &mdash; but watch where it went: the 103.9 was a double-play grounder, the 101.5 a fly out. The <b>104.9 was the line drive misplayed into an inside-the-park HR</b>, and the crushed <b>105.9 double</b> was the one genuinely earned blow, plus the <b>81-mph &ldquo;double&rdquo;</b> the park gifted. At altitude, hard contact is unavoidable; almost none of it was a pitch he&rsquo;d take back.</div>
+      <div class="bbnote">The rally&rsquo;s contact splits cleanly in two: <b>Lowe (100.5) and Stephenson (104.6)</b> earned theirs, but <b>Suárez (73.5) and Steer (79.6)</b> were soft singles that found grass &mdash; and Steer&rsquo;s drove in a run. Add the <b>deflected 1st-inning single</b>, and a real share of the night&rsquo;s damage was contact he&rsquo;d induce again happily. Outside the 2nd, the contact was almost all soft: 87, 73, 78 mph fly outs to close it.</div>
     </div>
   </div>
 </section>
@@ -231,43 +221,43 @@ footer{padding:34px 0 60px;color:var(--muted2);font-family:var(--mono);font-size
 <section>
   <div class="wrap">
     <div class="eyebrow">Recurring Tendencies</div>
-    <h2>Pitching the thin air</h2>
+    <h2>How four runs happened without a hard inning</h2>
     <div class="threads">
+      <div class="thread"><span class="tag">+2.17 / −2.50</span>
+        <h3>One bad frame, bracketed by dominance</h3>
+        <p>The 2nd inning was the entire start: a <b>+2.17 run-value hole</b>. Everything around it &mdash; the 1st, and the 3rd through 5th &mdash; ran <b>deeply negative (&minus;2.50)</b>. He struck out the side in the 4th and retired his last ten hitters but one. This wasn&rsquo;t a pitcher getting hit around; it was a single frame that snowballed.</p></div>
       <div class="thread"><span class="tag">2 of 4 hits</span>
-        <h3>The altitude fingerprint</h3>
-        <p>The leadoff run was an <b>inside-the-park homer</b> &mdash; a 104.9-mph line drive at 18&deg; that the center fielder couldn&rsquo;t handle, in an outfield only Coors has. And McCarthy&rsquo;s second-trip double left the bat at just <b>81 mph</b> on the ground (xBA .32) &mdash; an out almost anywhere, a double here. Two of the four hits were the defense and the park more than the pitcher.</p></div>
-      <div class="thread"><span class="tag">79% FF+CH</span>
-        <h3>Fastball / changeup against the lefties</h3>
-        <p>Facing <b>seven left-handed bats</b>, he went four-seam and changeup heavy (<b>53 and 29 pitches, 79%</b>) and largely shelved the breaking balls &mdash; the slider and sweeper lose depth at altitude. The changeup was the secondary of choice. Smart adaptation; the cost was command running in, which produced two hit batters.</p></div>
-      <div class="thread"><span class="tag">4 stranded</span>
-        <h3>Wobbled, then escaped</h3>
-        <p>Two walks and two hit-by-pitches put four free runners on &mdash; the real command story of the night. None scored. The signature moment: first-and-second, nobody out in the 4th, erased on a <b>Tovar double play</b> (a &minus;0.88 run-value swing). Bend, don&rsquo;t break.</p></div>
-      <div class="thread"><span class="tag">4 of last 7 K</span>
-        <h3>Locked in late</h3>
-        <p>After the third-inning run, he retired eight of the last nine and <b>struck out four of his final seven</b>, bridging the 5th and 6th. The 8 strikeouts and a 27.9% CSW at altitude &mdash; where pitches flatten out &mdash; is a strong put-away night.</p></div>
+        <h3>Soft singles, not hard ones</h3>
+        <p>Half the rally was weak contact: <b>Suárez at 73.5 and Steer at 79.6</b> mph, both singles, Steer&rsquo;s for a run. Those are outs more often than not (xBA .45 and .24). The <b>deflected leadoff single</b> in the 1st was cheap too. The Reds&rsquo; one truly hard knock was Stephenson&rsquo;s 104.6 single &mdash; the rest of the crooked number was found grass and free passes.</p></div>
+      <div class="thread"><span class="tag">5 in a row</span>
+        <h3>The snowball</h3>
+        <p>The sequence that built it: double, soft single, soft single, hard single, <b>walk</b> &mdash; five straight men reaching with nobody out. That loaded the bases for two <b>sacrifice flies</b>. The two walks (one overturned on a challenge) were the avoidable part; with one of them an out, the inning looks completely different.</p></div>
+      <div class="thread"><span class="tag">29.2 CSW</span>
+        <h3>The stuff was never the problem</h3>
+        <p>Seven strikeouts, 13 whiffs, a 29.2% CSW &mdash; the swing-and-miss was there all night, including <b>striking out the side in the 4th</b>. The Lowe double came on a changeup that was actually <b>down in the zone</b>; he was executing. One inning of clustered contact, not a stuff or command collapse.</p></div>
     </div>
   </div>
 </section>
 
 <div class="filterbar"><div class="wrap inner">
   <span class="fb-lab">Filter:</span>
-  <button class="fbtn on" data-f="ALL">All <span class="c">24</span></button>
-  <button class="fbtn" data-f="FIXABLE">Fixable <span class="c">4</span></button>
-  <button class="fbtn" data-f="SOFT">Soft <span class="c">2</span></button>
-  <button class="fbtn" data-f="NOISE">Noise <span class="c">2</span></button>
-  <button class="fbtn" data-f="CLEAN">Clean <span class="c">16</span></button>
+  <button class="fbtn on" data-f="ALL">All <span class="c">23</span></button>
+  <button class="fbtn" data-f="FIXABLE">Fixable <span class="c">2</span></button>
+  <button class="fbtn" data-f="SOFT">Soft <span class="c">3</span></button>
+  <button class="fbtn" data-f="NOISE">Noise <span class="c">3</span></button>
+  <button class="fbtn" data-f="CLEAN">Clean <span class="c">15</span></button>
 </div></div>
 
 <section style="border-bottom:none">
   <div class="wrap">
     <div class="eyebrow" style="margin-top:8px">Hitter by Hitter</div>
     <h2>Every plate appearance, run backwards</h2>
-    <p class="lead" style="margin-bottom:6px">Three scorelines per PA: <b>Run value</b> (Savant pitch-level delta_run_exp, negative = Skenes gained), <b>contact quality</b> (EV + xBA), and the <b>process tax</b>. At Coors the lens has to separate the pitcher from the park &mdash; and here, a fair amount of the damage was the park and the defense.</p>
+    <p class="lead" style="margin-bottom:6px">Three scorelines per PA: <b>Run value</b> (Savant delta_run_exp, negative = Skenes gained), <b>contact quality</b> (EV + xBA), and the <b>process tax</b>. The point of the lens tonight: the 2nd inning&rsquo;s four runs were a cluster of soft hits and free passes more than a wave of hard contact.</p>
     <div class="legend">
       <span><i style="background:var(--ff)"></i>4-Seam</span><span><i style="background:var(--si)"></i>Sinker</span>
-      <span><i style="background:var(--ch)"></i>Changeup</span><span><i style="background:var(--sl)"></i>Slider</span>
-      <span><i style="background:var(--st)"></i>Sweeper</span>
-      <span style="color:var(--muted2)">&#9711; ringed = final pitch · red ring = home run</span>
+      <span><i style="background:var(--fs)"></i>Splitter</span><span><i style="background:var(--ch)"></i>Changeup</span>
+      <span><i style="background:var(--sl)"></i>Slider</span><span><i style="background:var(--st)"></i>Sweeper</span>
+      <span style="color:var(--muted2)">&#9711; ringed = final pitch · numbers = sequence order</span>
     </div>
     <div id="pas"></div>
   </div>
@@ -276,95 +266,96 @@ footer{padding:34px 0 60px;color:var(--muted2);font-family:var(--mono);font-size
 <section style="border-top:1px solid var(--border)">
   <div class="wrap">
     <div class="eyebrow">The Bottom Line</div>
-    <h2>He won the start; the park won the game</h2>
-    <p class="lead">Strip out the altitude and the defense and this is a two-hit, eight-strikeout outing. Coors and a misplay in center turned a line drive into an inside-the-park homer, and the park turned a soft grounder into a double; the offense managed a single run behind him. The process to act on is small and specific: command in to left-handed hitters.</p>
+    <h2>A 4-ER line that pitched like a good one</h2>
+    <p class="lead">The box score will remember four earned runs; the underlying night was a net-positive outing with seven strikeouts and four dominant innings around one frame that snowballed on soft contact and two walks. There&rsquo;s no stuff problem and no command spiral to fix &mdash; just a single inning to keep from compounding.</p>
     <div class="close-grid">
-      <div class="cc"><h3>Keep</h3><p>The plan and the put-away. Eight K&rsquo;s and a 27.9% CSW at altitude is excellent, the four-seam/changeup approach to a lefty lineup was right, and escaping the 4th-inning jam with a double play is exactly the resilience you want on a tough-park night.</p></div>
-      <div class="cc"><h3>Fix</h3><p>Command to the inner third &mdash; that&rsquo;s the whole list. The four free runners (two walks and <b>two hit batters</b>) were all misses in to left-handed bats. There was no true mistake pitch: the leadoff run came on a <b>misplayed line drive</b>, not a hung ball. Tighten the command in and the free runners disappear.</p></div>
+      <div class="cc"><h3>Keep</h3><p>The stuff and the bounce-back. A 29.2% CSW, seven punchouts, the side struck out in the 4th, and a 1-2-3 fifth after a four-run frame &mdash; that resilience is the headline, not the line. The changeup and four-seam were missing bats all night.</p></div>
+      <div class="cc"><h3>Fix</h3><p>Don&rsquo;t let a soft-contact inning compound. The <b>two walks</b> turned a couple of seeing-eye singles into a bases-loaded, no-out crisis. Limiting the free passes in a cluster inning is the difference between a one-run frame and a four-run one &mdash; the stuff was good enough to escape if the bases stay manageable.</p></div>
     </div>
     <div class="math">
-      WHAT THE LENS SAYS (Savant, official):<br>
-      &bull; Run value <b>+0.45 raw</b> &mdash; but <b>+1.7 of that is the inside-park HR and the Coors double</b>; strip those two and he grades ~<b>&minus;1.3</b><br>
-      &bull; Damage: an <b>inside-the-park HR on a misplayed 104.9 line drive</b> + an <b>81-mph Coors double</b> &rarr; 2 of 4 hits defense/park-aided<br>
-      &bull; Command: <b>4 free runners</b> (2 BB, 2 HBP), all in to lefties &mdash; <b>all stranded</b>, jam escaped on a DP (&minus;0.98 the third time through)<br>
-      &rarr; A quality start at the toughest park in baseball, lost 2&ndash;1 to the altitude, the defense, and a quiet offense.
+      WHAT THE LENS SAYS:<br>
+      &bull; Run value <b>&minus;0.34</b> &mdash; net positive despite 4 ER; the 2nd was <b>+2.17</b>, the rest <b>&minus;2.50</b><br>
+      &bull; The 4-run inning: <b>1 hard hit (Stephenson 104.6)</b>, 2 soft singles (73.5, 79.6), 2 sac flies, 2 walks<br>
+      &bull; Plus a <b>deflected leadoff single</b> in the 1st &mdash; cheap contact bookending the night<br>
+      &rarr; A quality-stuff start with <b>one frame that snowballed</b> &mdash; far better than the 4 ER reads.
     </div>
   </div>
 </section>
 
 <footer><div class="wrap">
-  REVERSE GAME REPORT v1 · Skenes @ COL · 2026-06-20 · game_pk 824342 · No Brand Baseball Analytics<br>
-  Pitch &amp; batted-ball data: Baseball Savant. Run value = Savant pitch-level delta_run_exp (official). McCarthy leadoff play officially a home run, run earned, no error charged; graded Noise on process.
-  Verdicts grade process independent of outcome; &ldquo;Noise&rdquo; = good pitch, no help (park/defense/luck); &ldquo;Soft&rdquo; = earned hard contact.
+  REVERSE GAME REPORT v1 · Skenes vs CIN · 2026-06-26 · game_pk 823363 · No Brand Baseball Analytics<br>
+  Pitch &amp; batted-ball data: Baseball Savant. Run value = Savant pitch-level delta_run_exp.
+  Verdicts grade process independent of outcome; &ldquo;Noise&rdquo; = good pitch, no help (soft contact/deflection); &ldquo;Soft&rdquo; = earned hard contact.
 </div></footer>
 
 <script>
-const PITCH={"1":{"seq":[["FF",94.8,-1.013,2.576],["FF",96.4,0.144,3.161],["FF",95.6,-1.241,3.959],["FF",95.0,-0.231,2.869]],"re":1.114,"szt":3.23,"szb":1.63,"ev":104.9,"la":18,"xba":0.52,"hr":341},"2":{"seq":[["FF",96.7,-0.305,3.268],["FF",96.9,0.284,3.479],["FF",96.1,-0.361,3.17]],"re":-0.262,"szt":3.2,"szb":1.62,"ev":83.6,"la":59,"xba":0.02},"3":{"seq":[["CH",89.1,-0.048,1.794],["FF",96.2,0.535,3.398],["CH",88.6,2.041,-0.065]],"re":0.419,"szt":3.42,"szb":1.73},"4":{"seq":[["ST",85.3,0.665,2.2],["FF",96.3,0.725,1.937]],"re":-0.257,"szt":3.18,"szb":1.6,"ev":91.9,"la":32,"xba":0.05},"5":{"seq":[["CH",88.2,-1.118,1.919],["CH",89.0,0.782,0.972],["FF",97.1,0.712,1.761],["FF",96.9,-0.201,1.952],["FF",96.1,0.056,3.634]],"re":-0.279,"szt":3.16,"szb":1.59},"6":{"seq":[["SI",96.5,-0.807,3.314],["FF",96.1,0.202,3.768],["FF",95.9,0.155,2.739]],"re":0.717,"szt":3.29,"szb":1.66,"ev":105.9,"la":12,"xba":0.96},"7":{"seq":[["FF",96.5,-0.27,3.372],["FF",96.5,-0.311,3.881],["CH",88.7,2.184,0.102],["FF",92.4,1.995,1.938],["SL",87.8,0.871,2.889],["FF",96.0,-0.339,3.108]],"re":-0.288,"szt":3.23,"szb":1.63,"ev":98.4,"la":30,"xba":0.37},"8":{"seq":[["ST",84.9,-0.54,1.507],["ST",83.9,-0.416,2.906],["FF",96.1,-1.286,4.155],["ST",85.2,1.414,0.79]],"re":-0.259,"szt":3.22,"szb":1.62},"9":{"seq":[["SL",85.1,-0.758,0.776],["FF",96.4,-0.274,4.147],["CH",88.4,0.329,0.388],["FF",96.1,-0.235,1.955],["FF",96.1,-0.569,2.77]],"re":-0.263,"szt":3.34,"szb":1.69,"ev":101.5,"la":37,"xba":0.25},"10":{"seq":[["FF",96.6,-1.009,3.699],["CH",88.7,-0.507,2.228],["SL",86.1,0.751,1.11],["SL",85.8,0.557,1.493],["SL",87.4,1.974,0.024],["CH",88.6,-0.995,2.104]],"re":0.615,"szt":3.23,"szb":1.63,"ev":81.7,"la":3,"xba":0.32},"11":{"seq":[["CH",88.1,-1.431,2.231],["FF",96.4,-0.116,3.173],["FF",95.8,-0.195,1.802],["FF",97.5,0.187,2.411],["FF",96.8,-0.343,3.197]],"re":-0.277,"szt":3.2,"szb":1.62},"12":{"seq":[["FF",96.8,-0.472,3.938],["FF",96.8,-0.351,2.382],["CH",88.8,0.265,0.76],["FF",97.0,-0.486,2.818]],"re":0.691,"szt":3.42,"szb":1.73,"ev":92.5,"la":10,"xba":0.67},"13":{"seq":[["ST",85.4,1.171,2.589],["SL",86.1,2.964,0.527],["FF",97.0,-0.31,3.125],["FF",95.8,-0.75,3.044],["ST",84.5,-0.123,1.118]],"re":-0.279,"szt":3.18,"szb":1.6},"14":{"seq":[["CH",89.0,0.186,0.76],["SL",86.7,0.306,2.478],["CH",88.0,-1.635,2.696],["FF",96.8,-0.979,2.794],["FF",96.6,-1.241,3.107]],"re":0.452,"szt":3.16,"szb":1.59},"15":{"seq":[["FF",97.5,-0.145,2.603],["CH",88.4,-0.55,2.22],["SL",88.7,1.726,0.017]],"re":0.436,"szt":3.29,"szb":1.66},"16":{"seq":[["CH",88.8,-1.167,2.008],["FF",98.6,0.436,2.824]],"re":-0.277,"szt":3.23,"szb":1.63,"ev":86.8,"la":24,"xba":0.16},"17":{"seq":[["ST",85.3,1.115,2.415],["FF",97.0,0.419,3.705],["FF",96.3,0.428,2.316]],"re":-0.311,"szt":3.22,"szb":1.62,"ev":103.9,"la":-7,"xba":0.37},"18":{"seq":[["FF",95.7,0.47,3.303],["FF",95.4,0.501,4.026],["CH",89.0,-0.157,0.844],["CH",88.8,-0.029,-0.103],["CH",87.4,-1.167,2.464],["SL",87.3,0.39,1.686],["CH",90.2,0.301,0.575],["CH",88.8,0.298,0.905]],"re":-0.262,"szt":3.34,"szb":1.69},"19":{"seq":[["SL",87.3,-0.312,2.694]],"re":-0.262,"szt":3.23,"szb":1.63,"ev":92.2,"la":-12,"xba":0.21},"20":{"seq":[["CH",88.5,-0.662,1.678],["CH",87.9,-0.941,2.205],["FF",96.6,-0.712,3.528],["FF",96.1,-1.94,3.137],["CH",90.0,-0.77,1.244],["FF",96.6,-1.589,4.021],["CH",88.5,-1.182,1.08]],"re":-0.26,"szt":3.2,"szb":1.62},"21":{"seq":[["FF",97.3,-0.772,3.985],["FF",95.7,-0.012,3.465],["FF",97.4,-0.437,3.869],["FF",96.7,0.546,3.276],["SL",87.9,2.212,-0.379],["CH",89.5,0.884,0.586]],"re":-0.262,"szt":3.42,"szb":1.73},"22":{"seq":[["FF",97.5,-0.602,3.986],["FF",97.5,0.36,2.968],["SL",85.6,1.181,0.308],["ST",85.6,1.716,1.022],["ST",85.6,0.931,1.366]],"re":-0.261,"szt":3.18,"szb":1.6},"23":{"seq":[["CH",88.0,0.389,0.539],["CH",88.4,-0.566,2.233],["FF",97.8,0.027,4.177],["FF",97.0,-0.69,3.517],["CH",89.1,0.872,0.989]],"re":0.342,"szt":3.16,"szb":1.59},"24":{"seq":[["CH",88.7,0.463,1.002],["FF",97.3,0.062,3.262],["CH",88.3,-0.638,2.522],["FF",97.1,0.236,3.021]],"re":-0.278,"szt":3.29,"szb":1.66,"ev":73.0,"la":43,"xba":0.28}};
+const PITCH={"1":{"seq":[["FF",96.7,-0.647,2.006],["FF",97.4,0.268,3.026],["SL",86.1,1.183,2.497],["ST",84.1,0.123,3.577],["CH",87.9,-1.881,2.526],["FF",97.2,-0.62,1.785],["FF",97.2,-0.299,3.169]],"re":0.453,"szt":3.09,"szb":1.56,"ev":95.8,"la":7,"xba":0.58},"2":{"seq":[["FF",97.7,0.54,2.392],["FF",96.5,0.447,3.68],["FF",96.9,-0.005,3.188]],"re":-0.255,"szt":3.46,"szb":1.75,"ev":97.2,"la":27,"xba":0.323},"3":{"seq":[["FF",96.7,-0.554,1.516],["SL",87.4,-0.265,2.578],["FF",96.8,-1.707,3.879],["SL",87.6,-0.116,1.76],["CH",87.5,-1.642,1.763]],"re":-0.256,"szt":3.29,"szb":1.66},"4":{"seq":[["ST",85.9,-0.441,2.202],["SI",96.7,-0.187,1.259],["ST",85.5,0.42,1.9]],"re":-0.281,"szt":3.24,"szb":1.63,"ev":91.5,"la":57,"xba":0.011},"5":{"seq":[["FF",95.7,-0.21,3.185],["FF",96.0,0.531,3.614],["CH",90.0,-0.134,1.294],["SI",96.5,-0.291,2.6],["CH",89.6,0.147,1.667]],"re":0.716,"szt":3.37,"szb":1.7,"ev":100.5,"la":13,"xba":0.934},"6":{"seq":[["FF",96.9,-0.81,4.033],["SI",96.8,-0.728,2.41]],"re":0.49,"szt":3.17,"szb":1.6,"ev":73.5,"la":14,"xba":0.451},"7":{"seq":[["SI",97.4,1.227,0.929],["SL",87.4,1.014,1.75],["SL",86.4,1.208,1.462],["SL",86.3,0.271,1.6],["FF",96.9,1.008,2.267],["ST",84.9,0.354,2.109],["FF",97.1,-0.448,2.761]],"re":0.477,"szt":3.1,"szb":1.56,"ev":79.6,"la":26,"xba":0.243},"8":{"seq":[["CH",89.2,2.525,0.563],["FS",94.5,-0.485,1.263],["FS",93.4,-0.729,1.516],["FS",93.6,-0.441,0.699],["SL",86.9,-0.24,2.662],["FF",97.9,0.379,2.581]],"re":0.482,"szt":3.36,"szb":1.7,"ev":104.6,"la":20,"xba":0.594},"9":{"seq":[["ST",86.7,0.758,0.863],["ST",84.4,0.415,1.52],["ST",85.9,0.001,1.136],["SI",97.4,0.046,1.196],["FS",93.8,-0.806,1.774],["FF",97.0,0.686,1.365]],"re":0.339,"szt":3.05,"szb":1.54},"10":{"seq":[["FF",98.2,-0.186,3.117]],"re":-0.203,"szt":3.09,"szb":1.56,"ev":84.3,"la":24,"xba":null},"11":{"seq":[["ST",84.7,-0.433,2.238]],"re":-0.232,"szt":3.46,"szb":1.75,"ev":96.2,"la":26,"xba":null},"12":{"seq":[["FF",97.9,-0.711,2.959],["FF",96.6,-1.129,3.145],["FF",96.4,-0.085,3.375],["SI",96.3,0.971,2.433],["CH",89.2,-1.572,2.189],["SL",88.7,1.305,1.36]],"re":0.132,"szt":3.29,"szb":1.66},"13":{"seq":[["SI",97.3,0.056,2.139],["SL",87.2,0.505,1.78],["FF",97.1,-0.797,4.039],["ST",85.7,-0.149,2.591]],"re":-0.289,"szt":3.24,"szb":1.63},"14":{"seq":[["ST",84.7,0.163,2.167],["FF",97.2,0.492,3.461],["FF",96.0,-0.819,4.223]],"re":-0.261,"szt":3.37,"szb":1.7},"15":{"seq":[["FF",96.2,0.361,3.101],["ST",84.4,0.508,3.067],["FF",97.8,0.702,3.631],["FF",97.1,-0.51,3.341],["SL",87.7,1.679,0.607],["FF",97.0,-0.309,3.236],["SL",87.3,0.346,1.799],["ST",84.1,0.537,2.256]],"re":-0.263,"szt":3.17,"szb":1.6,"ev":86.7,"la":41,"xba":0.003},"16":{"seq":[["ST",83.6,-0.024,2.638],["ST",84.9,0.469,1.452],["CH",88.1,-0.105,0.878]],"re":-0.26,"szt":3.1,"szb":1.56},"17":{"seq":[["SL",86.8,1.608,1.672],["ST",84.2,0.73,1.435],["SI",95.6,-0.337,2.864]],"re":0.453,"szt":3.36,"szb":1.7,"ev":96.6,"la":16,"xba":0.666},"18":{"seq":[["ST",83.5,-1.414,3.657],["FF",96.4,-0.273,3.442],["FF",95.8,-0.203,2.951],["FF",97.0,0.734,2.13],["FF",96.6,0.36,3.199],["CH",88.2,-0.803,2.005],["FF",95.9,-0.132,3.394]],"re":-0.253,"szt":3.05,"szb":1.54},"19":{"seq":[["ST",83.5,0.517,1.98],["ST",84.4,0.147,2.282],["CH",87.6,-1.356,2.171],["CH",87.8,-0.224,1.093]],"re":-0.258,"szt":3.09,"szb":1.56},"20":{"seq":[["ST",84.3,0.119,0.837],["FF",96.1,0.19,2.702],["FF",96.1,-0.63,3.86],["SI",95.9,0.656,2.401]],"re":-0.282,"szt":3.46,"szb":1.75},"21":{"seq":[["FF",96.1,0.05,2.847]],"re":-0.261,"szt":3.29,"szb":1.66,"ev":87.5,"la":42,"xba":0.003},"22":{"seq":[["ST",84.4,0.134,2.29]],"re":-0.263,"szt":3.24,"szb":1.63,"ev":72.6,"la":73,"xba":0.001},"23":{"seq":[["FF",96.6,0.104,2.958],["SI",96.4,0.077,3.23],["FF",96.0,-0.137,4.407],["FF",96.5,-0.139,4.024],["FF",97.5,-0.019,3.926],["ST",85.0,0.377,2.891]],"re":-0.261,"szt":3.37,"szb":1.7,"ev":77.9,"la":46,"xba":0.069}};
 
 const DATA=[
-{pa:1,inn:1,tto:1,nm:'Jake McCarthy',h:'L',res:'Inside-Park HR',rt:'hr',
- happened:'McCarthy lined the fourth pitch into center &mdash; a <b>104.9-mph line drive at just 18&deg;</b> that the center fielder couldn&rsquo;t corral. It rolled in the deep Coors outfield and McCarthy circled the bases: an inside-the-park home run, and the first run of the game.',
- mechanism:'This is the reverse lens earning its keep. The pitch produced a <b>line drive (18&deg; &mdash; not a launched fly ball)</b>; the four bases came from a <b>misplay in center plus the Coors-sized outfield</b>, not a hung pitch. Officially it&rsquo;s scored a clean home run (no error charged, run earned), but on the field it played as a ball the defense should have contained. By process, that&rsquo;s noise, not a mistake.',
- cf:'Nothing on the pitch &mdash; a line drive to center is a single, a double, or an out with a clean play in the outfield. Never four bases.',exp:'A contained line drive: a hit or an out, not a run.',v:'NOISE',tax:'Inside-the-park HR on a misplayed line drive'},
-{pa:2,inn:1,tto:1,nm:'Willi Castro',h:'L',res:'Flyout',rt:'out',
- happened:'Three four-seams, a towering popup (59&deg;) to short. Out.',mechanism:'Answered the homer with a quick out.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
-{pa:3,inn:1,tto:1,nm:'TJ Rumfield',h:'L',res:'Hit By Pitch',rt:'hbp',
- happened:'A three-pitch at-bat ending with a hit batsman &mdash; the first of two on the night.',
- mechanism:'Pitching in to the lefty and missing too far in. A free baserunner, though stranded.',cf:'Command the inner edge without wearing him.',exp:'No free runner.',v:'FIXABLE',tax:'Hit batsman (stranded)'},
-{pa:4,inn:1,tto:1,nm:'Hunter Goodman',h:'R',res:'Flyout',rt:'out',
- happened:'Sweeper then four-seam, fly to right. Two pitches, two down.',mechanism:'Quick out.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
-{pa:5,inn:1,tto:1,nm:'Troy Johnston',h:'L',res:'K (foul tip)',rt:'k',
- happened:'Stranded Rumfield with a foul-tip strikeout to end the first.',mechanism:'Escaped the HBP unharmed.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
-{pa:6,inn:2,tto:1,nm:'Cole Carrigg',h:'L',res:'Double',rt:'hit',
- happened:'Carrigg scorched a <b>105.9-mph</b> line drive (xBA .96 &mdash; a near-certain hit) for a double. Crushed.',
- mechanism:'A four-seam up over the middle and an elite piece of hitting. Earned &mdash; tip the cap. Stranded.',cf:'Limited.',exp:'Extra-base hit.',v:'SOFT',tax:'Earned 106-mph double (stranded)'},
-{pa:7,inn:2,tto:1,nm:'Edouard Julien',h:'L',res:'Flyout',rt:'out',
- happened:'A six-pitch at-bat, fly to center. Caught.',mechanism:'Worked the count but won it.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'Minimal'},
-{pa:8,inn:2,tto:1,nm:'Ezequiel Tovar',h:'R',res:'K swinging',rt:'k',
- happened:'Sweeper-heavy, swinging K to strand Carrigg and end the 2nd.',mechanism:'Put away the righty with the breaker.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
-{pa:9,inn:3,tto:1,nm:'Sterlin Thompson',h:'L',res:'Flyout',rt:'out',
- happened:'Opened the 3rd by scalding a <b>101.5-mph</b> fly &mdash; but caught in center. Loud out.',
- mechanism:'Hard contact, fielded. The Rockies were squaring him at altitude; several found gloves.',cf:'None.',exp:'Out, but a loud one.',v:'CLEAN',tax:'None (hard fly, caught)'},
-{pa:10,inn:3,tto:2,nm:'Jake McCarthy',h:'L',res:'Double',rt:'hit',
- happened:'McCarthy chopped an <b>81.7-mph</b> ground ball &mdash; and it rolled into a double in the vast Coors outfield. A soft hit that goes for two only here.',
- mechanism:'The clearest park tax of the night. An 81-mph grounder (xBA .32) is an out in most yards; at Coors, with the gaps and the carry, it&rsquo;s a double. No fault on the pitch &mdash; a changeup down that he just slapped.',
- cf:'Nothing &mdash; soft contact the park turned into a baserunner.',exp:'An out or single almost anywhere else.',v:'NOISE',tax:'Coors double on an 81-mph grounder'},
-{pa:11,inn:3,tto:2,nm:'Willi Castro',h:'L',res:'K swinging',rt:'k',
- happened:'Five pitches, swinging K. One out, runner on second.',mechanism:'Answered the double with a punchout.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
-{pa:12,inn:3,tto:2,nm:'TJ Rumfield',h:'L',res:'Single, RBI',rt:'hit',
- happened:'Rumfield lined a 92-mph single to left, scoring McCarthy from second. The second run.',
- mechanism:'An earned single (xBA .67) &mdash; but the run was set up by the soft Coors double before it. The pitch was a four-seam up; Rumfield squared it.',cf:'Limited &mdash; a clean liner.',exp:'A hit; the run traces to the park-aided double.',v:'SOFT',tax:'RBI single (rally started by a Coors double)'},
-{pa:13,inn:3,tto:2,nm:'Hunter Goodman',h:'R',res:'K swinging',rt:'k',
- happened:'Stranded Rumfield with a swinging K to cap the 3rd at one run.',mechanism:'Stopped the bleeding at a single run.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
-{pa:14,inn:4,tto:2,nm:'Troy Johnston',h:'L',res:'Walk',rt:'bb',
- happened:'A five-pitch walk to open the 4th.',mechanism:'First of the back-to-back free passes that built the inning&rsquo;s jam. Avoidable.',cf:'Attack the zone.',exp:'No runner.',v:'FIXABLE',tax:'5-pitch walk'},
-{pa:15,inn:4,tto:2,nm:'Cole Carrigg',h:'L',res:'Hit By Pitch',rt:'hbp',
- happened:'Hit Carrigg &mdash; the second hit batsman &mdash; moving Johnston to second. First and second, nobody out.',
- mechanism:'The second time pitching in to a lefty got away. Now a jam: two on, no outs, top of the order looming.',cf:'Command in without the free base.',exp:'A manageable count instead of a loaded jam.',v:'FIXABLE',tax:'Second HBP, built the jam'},
-{pa:16,inn:4,tto:2,nm:'Edouard Julien',h:'L',res:'Lineout',rt:'out',
- happened:'Julien lined out to center &mdash; caught &mdash; for the first out of the jam.',mechanism:'A hard-hit ball at someone; the escape begins.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
-{pa:17,inn:4,tto:2,nm:'Ezequiel Tovar',h:'R',res:'Double Play',rt:'dp',
- happened:'Tovar hit a <b>103.9-mph</b> grounder &mdash; right into a 4-6-3 double play. Jam escaped, no runs.',
- mechanism:'<b>The play of the game.</b> A hard grounder turned two, wiping a first-and-second, none-out threat (a &minus;0.88 run-value swing). The free runners never scored.',cf:'None.',exp:'A double play erases the jam.',v:'CLEAN',tax:'None &mdash; DP escaped the jam'},
-{pa:18,inn:5,tto:2,nm:'Sterlin Thompson',h:'L',res:'K swinging',rt:'k',
- happened:'An eight-pitch battle &mdash; five changeups &mdash; ending in a swinging K to start the 5th.',
- mechanism:'Leaned on the changeup and won a long at-bat.',cf:'Minor.',exp:'K.',v:'CLEAN',tax:'Minimal (8-pitch K)'},
-{pa:19,inn:5,tto:3,nm:'Jake McCarthy',h:'L',res:'Groundout',rt:'out',
- happened:'First-pitch slider, soft grounder to second. One-pitch out &mdash; held McCarthy to nothing the third time.',mechanism:'Quick out against the bat that homered.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
-{pa:20,inn:5,tto:3,nm:'Willi Castro',h:'L',res:'K swinging',rt:'k',
- happened:'A seven-pitch changeup-heavy at-bat, swinging K to end the 5th.',mechanism:'The changeup did the work again.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
-{pa:21,inn:6,tto:3,nm:'TJ Rumfield',h:'L',res:'K swinging',rt:'k',
- happened:'Five four-seams up to set it, then a changeup to finish. Swinging K to open the 6th.',mechanism:'Climbing the ladder still played at 90+ pitches.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
-{pa:22,inn:6,tto:3,nm:'Hunter Goodman',h:'R',res:'K swinging',rt:'k',
- happened:'Four-seams up then breaking balls down &mdash; swinging K. Two down, third strikeout of the inning bridge.',mechanism:'Four of his last seven went down on strikes.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
-{pa:23,inn:6,tto:3,nm:'Troy Johnston',h:'L',res:'Walk',rt:'bb',
- happened:'A two-out walk &mdash; his fourth free runner of the night.',mechanism:'A last bit of command wobble late, but with two outs and ultimately stranded.',cf:'Finish in the zone.',exp:'Out or shorter AB.',v:'FIXABLE',tax:'2-out walk (stranded)'},
-{pa:24,inn:6,tto:3,nm:'Cole Carrigg',h:'L',res:'Flyout',rt:'out',
- happened:'A routine 73-mph fly to center to end his night. Six innings, eight K, two earned at altitude.',mechanism:'Soft contact to close a strong outing in a hard place to pitch.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
+{pa:1,inn:1,tto:1,nm:'Blake Dunn',h:'R',res:'Single',rt:'hit',
+ happened:'A seven-pitch leadoff battle ending on a high four-seam that Dunn grounded toward short &mdash; and Griffin deflected it. Ruled a single.',
+ mechanism:'A deflected ball off the shortstop, scored a hit (xBA .58, but the infield got leather on it). The kind of leadoff baserunner that isn&rsquo;t squarely earned. Stranded.',
+ cf:'A clean play and it&rsquo;s an out or a routine single.',exp:'Out or single; no rally.',v:'NOISE',tax:'Deflected leadoff single (stranded)'},
+{pa:2,inn:1,tto:1,nm:'Elly De La Cruz',h:'L',res:'Flyout',rt:'out',
+ happened:'Three four-seams, fly to center. Out.',mechanism:'Quick out after the deflection.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
+{pa:3,inn:1,tto:1,nm:'JJ Bleday',h:'L',res:'K swinging',rt:'k',
+ happened:'Five pitches, swinging K. First of seven.',mechanism:'Mixed the slider and change to put him away.',cf:'None.',exp:'K.',v:'CLEAN',tax:'Minimal'},
+{pa:4,inn:1,tto:1,nm:'Sal Stewart',h:'R',res:'Flyout',rt:'out',
+ happened:'Sweeper and sinker, lazy fly to right. A clean, scoreless first.',mechanism:'Weak contact, easy out.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
+{pa:5,inn:2,tto:1,nm:'Nathaniel Lowe',h:'L',res:'Double',rt:'hit',
+ happened:'Lowe got to a changeup &mdash; down in the zone, but he barreled it &mdash; <b>100.5 mph</b> for a double to right. The inning that got away begins.',
+ mechanism:'Earned hard contact (xBA .93). The changeup was actually located <b>down</b> where you want it; Lowe just squared it. Tip the cap.',cf:'Limited &mdash; a well-located pitch, hit hard.',exp:'Extra-base hit on contact that good.',v:'SOFT',tax:'Earned 100-mph double (started the rally)'},
+{pa:6,inn:2,tto:1,nm:'Eugenio Suárez',h:'R',res:'Single',rt:'hit',
+ happened:'Suárez blooped a <b>73.5-mph</b> single to left &mdash; soft contact that found grass &mdash; moving Lowe to third.',
+ mechanism:'The first of two seeing-eye singles. A 73-mph ball is an out more often than not (xBA .45); this one dropped. No fault on the pitch.',cf:'A step the other way and it&rsquo;s caught.',exp:'Out or single; runner doesn&rsquo;t reach scoring position cleanly.',v:'NOISE',tax:'73-mph soft single'},
+{pa:7,inn:2,tto:1,nm:'Spencer Steer',h:'R',res:'Single, RBI',rt:'hit',
+ happened:'Steer slapped a <b>79.6-mph</b> single to center &mdash; another soft one &mdash; scoring Lowe. Run 1.',
+ mechanism:'The second seeing-eye single, and this one scored (xBA just .24 &mdash; a hit one time in four). The inning was snowballing on soft contact, not hard hitting.',cf:'A soft liner that&rsquo;s caught most nights.',exp:'Out or single; the run likely doesn&rsquo;t score.',v:'NOISE',tax:'80-mph soft RBI single'},
+{pa:8,inn:2,tto:1,nm:'Tyler Stephenson',h:'R',res:'Single, RBI',rt:'hit',
+ happened:'Stephenson finally squared one &mdash; a <b>104.6-mph</b> line drive to right &mdash; scoring Suárez. Run 2.',
+ mechanism:'The one genuinely hard hit of the rally (xBA .59). Earned. By now the bases kept turning over.',cf:'Limited &mdash; a 105 liner is a credit to the hitter.',exp:'A hit; the run is earned.',v:'SOFT',tax:'Earned 105-mph RBI single'},
+{pa:9,inn:2,tto:1,nm:'Matt McLain',h:'R',res:'Walk',rt:'bb',
+ happened:'A six-pitch walk &mdash; the call overturned on a Reds challenge &mdash; loaded the bases with nobody out.',
+ mechanism:'The free pass that turned a rally into a bases-loaded, no-out crisis. The one avoidable link in the chain.',cf:'Win that pitch and the bases aren&rsquo;t loaded; the inning stays a one- or two-run frame.',exp:'A runner-limited inning, not a loaded one.',v:'FIXABLE',tax:'Bases-loading walk, no outs'},
+{pa:10,inn:2,tto:2,nm:'Blake Dunn',h:'R',res:'Sac Fly',rt:'sf',
+ happened:'Dunn lifted the first pitch to right, deep enough to score Steer. Sacrifice fly &mdash; run 3, but the first out.',
+ mechanism:'A productive out that actually <b>helped by run value</b> (an out with the bases loaded). The run scores on most balls in play there; this began the escape.',cf:'None &mdash; an out is the goal.',exp:'Out plus a run, given loaded bases.',v:'CLEAN',tax:'None &mdash; productive out (run inherited)'},
+{pa:11,inn:2,tto:2,nm:'Elly De La Cruz',h:'L',res:'Sac Fly',rt:'sf',
+ happened:'De La Cruz flied to center, scoring Stephenson. Run 4, second out.',
+ mechanism:'Another productive out (negative run value &mdash; it helped). Two quick outs began to stop the bleeding.',cf:'None.',exp:'Out plus a run.',v:'CLEAN',tax:'None &mdash; productive out (run inherited)'},
+{pa:12,inn:2,tto:2,nm:'JJ Bleday',h:'L',res:'Walk',rt:'bb',
+ happened:'A second walk of the inning, re-loading the bases with two outs.',
+ mechanism:'One more free pass in a long inning &mdash; avoidable, though ultimately stranded.',cf:'Attack the zone with two outs.',exp:'Out or shorter AB.',v:'FIXABLE',tax:'Walk re-loaded the bases'},
+{pa:13,inn:2,tto:2,nm:'Sal Stewart',h:'R',res:'K swinging',rt:'k',
+ happened:'Finally escaped &mdash; a swinging strikeout to strand the bases loaded and end a four-run inning.',
+ mechanism:'Slammed the door before it got worse. The damage was capped at four.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None &mdash; ended the inning'},
+{pa:14,inn:3,tto:2,nm:'Nathaniel Lowe',h:'L',res:'K swinging',rt:'k',
+ happened:'Three-pitch swinging K to open the 3rd &mdash; the reset begins.',mechanism:'Right back to missing bats.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
+{pa:15,inn:3,tto:2,nm:'Eugenio Suárez',h:'R',res:'Flyout',rt:'out',
+ happened:'An eight-pitch battle, fly to left. Caught.',mechanism:'Long but won it.',cf:'Minor.',exp:'Out.',v:'CLEAN',tax:'Minimal'},
+{pa:16,inn:3,tto:2,nm:'Spencer Steer',h:'R',res:'K swinging',rt:'k',
+ happened:'Three pitches, swinging K. A clean third after the storm.',mechanism:'Two K&rsquo;s in the frame; back in control.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
+{pa:17,inn:4,tto:2,nm:'Tyler Stephenson',h:'R',res:'Single',rt:'hit',
+ happened:'Stephenson lined a 96-mph single to left &mdash; earned, but stranded.',
+ mechanism:'Hard contact (xBA .67), no damage &mdash; he erased it with three straight strikeouts.',cf:'Limited.',exp:'A hit; stranded.',v:'SOFT',tax:'Hard single (stranded)'},
+{pa:18,inn:4,tto:2,nm:'Matt McLain',h:'R',res:'K swinging',rt:'k',
+ happened:'A seven-pitch fastball-heavy at-bat, swinging K. One down in the 4th.',mechanism:'Climbed the ladder for the whiff.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
+{pa:19,inn:4,tto:3,nm:'Blake Dunn',h:'R',res:'K swinging',rt:'k',
+ happened:'Four pitches, swinging K. Two down.',mechanism:'The third time through began with a punchout.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
+{pa:20,inn:4,tto:3,nm:'Elly De La Cruz',h:'L',res:'K looking',rt:'k',
+ happened:'Froze De La Cruz on a called third strike &mdash; <b>striking out the side</b> in the 4th after the leadoff single.',
+ mechanism:'Three straight K&rsquo;s to erase a baserunner and underline that the stuff was elite.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
+{pa:21,inn:5,tto:3,nm:'JJ Bleday',h:'L',res:'Flyout',rt:'out',
+ happened:'First-pitch fly to left. One-pitch out to open the 5th.',mechanism:'Quick, efficient.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
+{pa:22,inn:5,tto:3,nm:'Sal Stewart',h:'R',res:'Pop Out',rt:'out',
+ happened:'A 73-mph popup to first in foul ground. One pitch, two down.',mechanism:'Weak contact, easy out.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
+{pa:23,inn:5,tto:3,nm:'Nathaniel Lowe',h:'L',res:'Flyout',rt:'out',
+ happened:'A soft 78-mph fly to right to end his night &mdash; a <b>1-2-3 fifth</b>. Five innings, seven K, the damage all in one frame.',
+ mechanism:'Closed on soft contact, having retired the side in order after a four-run inning. Pulled at 96 pitches.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
 ];
 
 const PCOLOR={FF:'#e23b4e',SI:'#f6892b',FS:'#2fb6c4',CH:'#33c46b',SL:'#f4c542',ST:'#9b6dff',CU:'#4aa3df'};
-function zone(pa,stand,isHR){
+function zone(pa,stand){
   const d=PITCH[pa]; if(!d) return '';
   const W=158,H=188,padX=14,padT=12,padB=30;
   const xMin=-2.0,xMax=2.0,zMin=0.4,zMax=4.6;
@@ -387,22 +378,21 @@ function zone(pa,stand,isHR){
     cxp=clamp(cxp,9,W-9); cyp=clamp(cyp,9,H-padB+10);
     const isFinal=i===d.seq.length-1;
     const dark=['SL','CH'].includes(t);
-    const ring=isFinal?(isHR?'#e23b4e':'#fff'):'rgba(0,0,0,.35)';
-    s+=`<circle cx="${cxp}" cy="${cyp}" r="9" fill="${PCOLOR[t]}" fill-opacity="${raw_in?1:0.55}" stroke="${ring}" stroke-width="${isFinal?(isHR?2.5:2):1}"${raw_in?'':' stroke-dasharray="2 1.5"'}/>`;
+    s+=`<circle cx="${cxp}" cy="${cyp}" r="9" fill="${PCOLOR[t]}" fill-opacity="${raw_in?1:0.55}" stroke="${isFinal?'#fff':'rgba(0,0,0,.35)'}" stroke-width="${isFinal?2:1}"${raw_in?'':' stroke-dasharray="2 1.5"'}/>`;
     s+=`<text x="${cxp}" y="${cyp+3.3}" text-anchor="middle" font-size="9.5" font-weight="700" font-family="JetBrains Mono" fill="${dark?'#10140f':'#fff'}" paint-order="stroke" stroke="${dark?'rgba(255,255,255,.5)':'rgba(0,0,0,.35)'}" stroke-width=".5">${i+1}</text>`;
   });
   return s+`</svg>`;
 }
 function evClass(ev){return ev>=98?'hard':ev>=88?'med':'soft';}
 function rvChip(re){const good=re<0;return `<span class="rv">Run value <span class="num ${good?'good':'bad'}">${(re<0?'\u2212':'+')+Math.abs(re).toFixed(2)}</span></span>`;}
-function pill(p,i,last,isHR){const cls=i===last?(isHR?' final finalhr':' final'):'';return `<div class="pill t-${p[0]}${cls}"><span class="ord">${i+1}</span><span class="pt">${p[0]}</span><span class="vl">${Math.round(p[1])}</span></div>`;}
+function pill(p,i,last){return `<div class="pill t-${p[0]}${i===last?' final':''}"><span class="ord">${i+1}</span><span class="pt">${p[0]}</span><span class="vl">${Math.round(p[1])}</span></div>`;}
 
 function card(d){
-  const pd=PITCH[d.pa],seq=pd.seq,last=seq.length-1,isHR=d.rt==='hr';
+  const pd=PITCH[d.pa],seq=pd.seq,last=seq.length-1;
   let bb='';
   if(pd.ev!=null){const c=evClass(pd.ev);
-    bb=`<div class="bbtag ${isHR?'hrtag':c}">Contact <b>${pd.ev} mph</b> · ${pd.la}&deg; LA · xBA <b>${pd.xba.toFixed(3)}</b>${pd.hr?` · inside-the-park`:''}</div>`;}
-  return `<div class="pa${isHR?' hrpa':''}" data-v="${d.v}">
+    bb=`<div class="bbtag ${c}">Contact <b>${pd.ev} mph</b> · ${pd.la}&deg; LA${pd.xba!=null?` · xBA <b>${pd.xba.toFixed(3)}</b>`:''}</div>`;}
+  return `<div class="pa" data-v="${d.v}">
     <div class="pa-top">
       <div class="pa-num">PA ${d.pa}<br>T${d.tto}</div>
       <div class="pa-id"><div class="nm">${d.nm}<span class="hand">${d.h}HH</span></div>
@@ -410,9 +400,9 @@ function card(d){
       <div class="pa-res"><div class="r ${d.rt}">${d.res}</div><div class="pc">${seq.length}P</div></div>
     </div>
     <div class="midrow">
-      <div class="zonebox">${zone(d.pa,d.h,isHR)}<div class="zonecap">Catcher's view</div></div>
+      <div class="zonebox">${zone(d.pa,d.h)}<div class="zonecap">Catcher's view</div></div>
       <div class="seqcol"><div class="seqlab">Sequence</div>
-        <div class="seq">${seq.map((p,i)=>pill(p,i,last,isHR)).join('')}</div>${bb}</div>
+        <div class="seq">${seq.map((p,i)=>pill(p,i,last)).join('')}</div>${bb}</div>
     </div>
     <div class="anat">
       <div class="row"><div class="lab">Happened</div><div class="val">${d.happened}</div></div>
@@ -428,7 +418,7 @@ function card(d){
 }
 function render(){
   const byInn={}; DATA.forEach(d=>{(byInn[d.inn]=byInn[d.inn]||[]).push(d)});
-  const score={1:'COL 1 · inside-park HR',2:'COL 1',3:'COL 2',4:'COL 2 · jam escaped',5:'COL 2',6:'COL 2 · pulled after'};
+  const score={1:'&mdash;',2:'CIN 4 · the inning',3:'CIN 4',4:'CIN 4 · struck out side',5:'CIN 4 · pulled after'};
   let html='';
   Object.keys(byInn).forEach(inn=>{
     html+=`<div class="inning-hdr"><span class="ti">Inning ${inn}</span><span class="ln"></span><span class="sc">${score[inn]||''}</span></div>`;
@@ -440,12 +430,11 @@ function render(){
 render();
 
 (function(){
-  const order=[1,2,4,6,7,9,10,12,16,17,19,24];
+  const order=[1,2,4,5,6,7,8,10,11,15,17,21,22,23];
   let h='';
   order.forEach(pa=>{const d=PITCH[pa]; if(d.ev==null) return;
-    const dd=DATA.find(x=>x.pa===pa); const isHR=dd.rt==='hr'; const isHit=dd.rt==='hit';
-    const cls=isHR?'hr':(isHit?'hit':'out');
-    h+=`<div class="bbpip ${cls} ${evClass(d.ev)}"><span class="ev">${d.ev}</span><span style="opacity:.6">${isHR?'HR':(isHit?'HIT':'out')}</span></div>`;});
+    const dd=DATA.find(x=>x.pa===pa); const isHit=dd.rt==='hit';
+    h+=`<div class="bbpip ${isHit?'hit':'out'} ${evClass(d.ev)}"><span class="ev">${d.ev}</span><span style="opacity:.6">${isHit?'HIT':(dd.rt==='sf'?'SF':'out')}</span></div>`;});
   document.getElementById('bbrow').innerHTML=h;
 })();
 
