@@ -462,9 +462,28 @@ function rvChip(re){const good=re<0;return `<span class="rv">Run value <span cla
 function pill(p,i,last,pa){const isChase=isChasePitch(pa,i,PITCH[pa].seq);const cls=i===last?' final':(isChase?' chase':'');return `<div class="pill t-${p[0]}${cls}"><span class="ord">${i+1}</span><span class="pt">${p[0]}</span><span class="vl">${Math.round(p[1])}</span></div>`;}
 
 function card(d){
-  const pd=PITCH[d.pa],seq=pd.seq,last=seq.length-1;
   const isHapp=d.nm==='Ian Happ';
   const isInh=d.rt==='inh';
+  if(isInh){
+    return `<div class="pa inherited" data-v="${d.v}">
+      <div class="pa-top">
+        <div class="pa-num">INH</div>
+        <div class="pa-id"><div class="nm">${d.nm}</div>
+          <div class="meta">Inning ${d.inn} · scored off the bullpen · charged to Skenes</div></div>
+        <div class="pa-res"><div class="r ${d.rt}">${d.res}</div></div>
+      </div>
+      <div class="anat">
+        <div class="row"><div class="lab">Happened</div><div class="val">${d.happened}</div></div>
+        <div class="row"><div class="lab">Mechanism</div><div class="val">${d.mechanism}</div></div>
+        <div class="row cf"><div class="lab">Counterfactual</div><div class="val">${d.cf}</div></div>
+        <div class="row exp"><div class="lab">Expected</div><div class="val">${d.exp}</div></div>
+      </div>
+      <div class="verdict">
+        <span class="vtag ${d.v}">${d.v[0]+d.v.slice(1).toLowerCase()}</span>
+        <span class="tax">Tax: <b>${d.tax}</b></span>
+      </div></div>`;
+  }
+  const pd=PITCH[d.pa],seq=pd.seq,last=seq.length-1;
   let bb='';
   if(pd.ev!=null){const c=evClass(pd.ev);
     bb=`<div class="bbtag ${c}">Contact <b>${pd.ev} mph</b> · ${pd.la}&deg; LA${pd.xba!=null?` · xBA <b>${pd.xba.toFixed(3)}</b>`:''}</div>`;}
