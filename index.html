@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reverse Report · Skenes @ SD · 8.25.26</title>
+<title>Reverse Report · Skenes vs SF · 9.1.26</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600;700;800&family=Saira:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -21,26 +21,25 @@
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'Saira',sans-serif;font-weight:400;line-height:1.55;
   -webkit-font-smoothing:antialiased;
-  background-image:radial-gradient(circle at 15% -5%, rgba(51,196,107,.08), transparent 45%),radial-gradient(circle at 90% 0%, rgba(253,184,39,.06), transparent 40%);
+  background-image:radial-gradient(circle at 15% -5%, rgba(226,59,78,.08), transparent 45%),radial-gradient(circle at 90% 0%, rgba(253,184,39,.05), transparent 40%);
   background-attachment:fixed;}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
 header{padding:54px 0 30px;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
 .kicker{font-family:'Saira Condensed';font-weight:700;letter-spacing:.34em;text-transform:uppercase;font-size:12px;color:var(--gold)}
 .kicker .rev{color:var(--muted2)}
-.livepill{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--clean);border:1px solid rgba(51,196,107,.4);background:rgba(51,196,107,.1);border-radius:99px;padding:3px 10px;margin-left:10px;vertical-align:middle}
 h1{font-family:'Saira Condensed';font-weight:800;font-size:clamp(38px,7vw,76px);line-height:.92;letter-spacing:-.01em;text-transform:uppercase;margin:10px 0 4px}
 h1 .vs{color:var(--muted2);font-weight:500}
 .subline{color:var(--muted);font-size:15px;font-family:var(--mono);letter-spacing:.02em}
-.thesis{margin-top:22px;max-width:800px;font-size:18px;color:#cfd6dd;border-left:3px solid var(--clean);padding:4px 0 4px 18px}
+.thesis{margin-top:22px;max-width:800px;font-size:18px;color:#cfd6dd;border-left:3px solid var(--fixable);padding:4px 0 4px 18px}
 .thesis b{color:#fff;font-weight:600}
-.cleanbill{margin-top:16px;font-family:var(--mono);font-size:12px;color:var(--clean);background:rgba(51,196,107,.06);border:1px solid rgba(51,196,107,.3);border-radius:9px;padding:11px 14px;max-width:800px;line-height:1.6}
-.cleanbill b{color:#fff}
+.cleanbill{margin-top:16px;font-family:var(--mono);font-size:12px;color:var(--muted2);background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:11px 14px;max-width:800px;line-height:1.6}
+.cleanbill b{color:var(--gold)}
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
 .chip{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:11px 15px;min-width:92px}
 .chip .v{font-family:'Saira Condensed';font-weight:800;font-size:27px;line-height:1;color:#fff}
 .chip .v small{font-size:14px;color:var(--muted);font-weight:600}
 .chip .l{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:6px}
-.chip.hot .v{color:var(--clean)} .chip.bad .v{color:var(--fixable)}
+.chip.hot .v{color:var(--clean)} .chip.bad .v{color:var(--fixable)} .chip.warn .v{color:var(--soft)}
 section{padding:40px 0;border-bottom:1px solid var(--border)}
 .eyebrow{font-family:'Saira Condensed';font-weight:700;letter-spacing:.28em;text-transform:uppercase;font-size:12px;color:var(--gold);margin-bottom:6px}
 h2{font-family:'Saira Condensed';font-weight:800;font-size:clamp(26px,4.5vw,40px);text-transform:uppercase;line-height:1;letter-spacing:-.01em}
@@ -49,27 +48,30 @@ h2{font-family:'Saira Condensed';font-weight:800;font-size:clamp(26px,4.5vw,40px
 .tto-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
 .tto{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:18px}
 .tto .h{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
-.tto .ppa{font-family:'Saira Condensed';font-weight:800;font-size:46px;line-height:.9;margin:8px 0 2px;color:var(--clean)}
+.tto .ppa{font-family:'Saira Condensed';font-weight:800;font-size:46px;line-height:.9;margin:8px 0 2px}
 .tto .ppa small{font-size:15px;color:var(--muted);font-weight:600}
 .tto .meta{font-size:13px;color:var(--muted)}
 .bar{height:8px;background:var(--panel3);border-radius:99px;margin-top:14px;overflow:hidden}
-.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#1c6b3d,var(--clean))}
-.tto.t1 .bar i{width:46%} .tto.t2 .bar i{width:100%} .tto.t3 .bar i{width:62%}
+.bar i{display:block;height:100%;border-radius:99px}
+.tto.t1 .ppa{color:var(--fixable)} .tto.t1 .bar i{background:linear-gradient(90deg,#7a2230,var(--fixable));width:100%}
+.tto.t2 .ppa{color:var(--clean)} .tto.t2 .bar i{background:linear-gradient(90deg,#1c6b3d,var(--clean));width:10%}
+.tto.t3 .ppa{color:var(--soft)} .tto.t3 .bar i{background:linear-gradient(90deg,#7a5512,var(--soft));width:63%}
 .tto .rvline{font-family:var(--mono);font-size:12px;margin-top:9px;color:var(--muted)}
-.tto .rvline b{font-family:'Saira Condensed';font-size:16px;font-weight:800;color:var(--clean)}
+.tto .rvline b{font-family:'Saira Condensed';font-size:16px;font-weight:800}
+.tto.t1 .rvline b{color:var(--fixable)} .tto.t2 .rvline b{color:var(--clean)} .tto.t3 .rvline b{color:var(--soft)}
 .split{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
 .vbox{border:1px solid var(--border);border-radius:12px;padding:16px;background:var(--panel)}
 .vbox .n{font-family:'Saira Condensed';font-weight:800;font-size:40px;line-height:.9}
 .vbox .t{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;margin-top:4px;color:var(--muted)}
 .vbox .d{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.4}
 .vbox.fixable .n{color:var(--fixable)} .vbox.soft .n{color:var(--soft)} .vbox.noise .n{color:var(--noise)} .vbox.clean .n{color:var(--clean)}
-.vbox.clean{border-color:rgba(51,196,107,.35)}
+.vbox.fixable{border-color:rgba(226,59,78,.4)}
 .contact{margin-top:26px;background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:18px 20px}
 .contact h3{font-family:'Saira Condensed';font-weight:700;font-size:18px;text-transform:uppercase;color:#fff;margin-bottom:14px}
 .bbrow{display:flex;flex-wrap:wrap;gap:7px}
 .bbpip{font-family:var(--mono);font-size:11px;padding:5px 9px;border-radius:7px;border:1px solid var(--border);display:flex;gap:6px;align-items:center}
 .bbpip .ev{font-weight:700}
-.bbpip.hit{border-color:rgba(226,59,78,.4)} .bbpip.out{opacity:.72}
+.bbpip.hit{border-color:rgba(226,59,78,.4)} .bbpip.out{opacity:.72} .bbpip.hr{border-color:var(--fixable);background:rgba(226,59,78,.14)}
 .bbpip.hard .ev{color:var(--fixable)} .bbpip.med .ev{color:var(--soft)} .bbpip.soft .ev{color:var(--clean)}
 .bbnote{font-size:13px;color:var(--muted);margin-top:13px}.bbnote b{color:#dfe4ea}
 .threads{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
@@ -95,6 +97,7 @@ h2{font-family:'Saira Condensed';font-weight:800;font-size:clamp(26px,4.5vw,40px
 .pa{background:var(--panel);border:1px solid var(--border);border-radius:14px;margin-bottom:14px;overflow:hidden;transition:.35s;animation:rise .5s both}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 .pa:hover{border-color:var(--border2)}
+.pa.hrpa{border-color:rgba(226,59,78,.5)}
 .pa-top{display:flex;align-items:flex-start;gap:14px;padding:17px 20px 0}
 .pa-num{font-family:'Saira Condensed';font-weight:800;font-size:13px;color:var(--muted2);letter-spacing:.08em;border:1px solid var(--border);border-radius:7px;padding:5px 9px;white-space:nowrap;margin-top:2px;text-align:center}
 .pa-id{flex:1;min-width:0}
@@ -104,7 +107,7 @@ h2{font-family:'Saira Condensed';font-weight:800;font-size:clamp(26px,4.5vw,40px
 .pa-res{text-align:right;white-space:nowrap}
 .pa-res .r{font-family:'Saira Condensed';font-weight:700;font-size:17px;text-transform:uppercase}
 .pa-res .pc{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:3px}
-.r.k{color:var(--clean)} .r.out{color:#aeb6bf} .r.hit{color:var(--fixable)} .r.bb{color:var(--soft)} .r.dp{color:var(--clean)} .r.sac{color:#aeb6bf}
+.r.k{color:var(--clean)} .r.out{color:#aeb6bf} .r.hit{color:var(--fixable)} .r.bb{color:var(--soft)} .r.hr{color:var(--fixable)} .r.sac{color:#aeb6bf}
 .midrow{display:flex;gap:18px;padding:14px 20px 6px;align-items:flex-start}
 .zonebox{flex:0 0 158px;text-align:center}
 .zonebox svg{display:block;background:var(--panel2);border:1px solid var(--border);border-radius:10px}
@@ -115,6 +118,7 @@ h2{font-family:'Saira Condensed';font-weight:800;font-size:clamp(26px,4.5vw,40px
 .pill{font-family:var(--mono);font-weight:500;font-size:12px;padding:5px 9px;border-radius:7px;border:1px solid;display:flex;align-items:center;gap:5px;position:relative}
 .pill .pt{font-weight:700} .pill .vl{opacity:.72;font-size:11px}
 .pill.final{box-shadow:0 0 0 2px rgba(255,255,255,.14)}
+.pill.finalhr{box-shadow:0 0 0 2px var(--fixable)}
 .pill .ord{position:absolute;top:-7px;left:-5px;font-size:8.5px;background:var(--bg);border:1px solid var(--border);border-radius:50%;width:15px;height:15px;display:flex;align-items:center;justify-content:center;color:var(--muted2)}
 .t-FF{color:var(--ff);border-color:rgba(226,59,78,.45);background:rgba(226,59,78,.1)}
 .t-SI{color:var(--si);border-color:rgba(246,137,43,.45);background:rgba(246,137,43,.1)}
@@ -126,6 +130,7 @@ h2{font-family:'Saira Condensed';font-weight:800;font-size:clamp(26px,4.5vw,40px
 .bbtag{display:inline-flex;gap:8px;align-items:center;margin-top:13px;font-family:var(--mono);font-size:11px;color:var(--muted);background:var(--panel3);border:1px solid var(--border);border-radius:7px;padding:5px 10px}
 .bbtag b{font-family:'Saira Condensed';font-weight:800;font-size:14px}
 .bbtag.hard b{color:var(--fixable)} .bbtag.med b{color:var(--soft)} .bbtag.soft b{color:var(--clean)}
+.bbtag.hrtag{border-color:rgba(226,59,78,.4);color:#f0b3ba}
 .anat{padding:8px 20px 20px}
 .row{display:grid;grid-template-columns:118px 1fr;gap:14px;padding:11px 0;border-top:1px solid var(--border)}
 .row:first-child{border-top:none}
@@ -162,25 +167,24 @@ footer{padding:34px 0 60px;color:var(--muted2);font-family:var(--mono);font-size
 
 <header>
   <div class="wrap">
-    <div class="kicker">Reverse Game Report &nbsp;<span class="rev">// post-game, run backwards</span>
-      <span class="livepill">Shutout · 0 BB</span></div>
-    <h1>Skenes <span class="vs">@</span> Padres</h1>
-    <div class="subline">Petco Park · Tue Aug 25, 2026 · Final: Pirates win, Skenes&rsquo; line: 6.0 IP, 3 H, 0 R, 0 ER, 0 BB, 4 K, 0 HR, 87 P</div>
+    <div class="kicker">Reverse Game Report &nbsp;<span class="rev">// post-game, run backwards</span></div>
+    <h1>Skenes <span class="vs">vs</span> Giants</h1>
+    <div class="subline">PNC Park · Tue Sep 1, 2026 · Skenes&rsquo; line: 4.2 IP, 8 H, 5 R, 5 ER, 3 BB, 4 K, 1 HR, 95 P</div>
     <div class="thesis">
-      Six shutout innings, zero walks, and a <b>&minus;3.05 run value</b> &mdash; his best process outing of the entire tracked season. First-pitch strikes jumped to <b>66.7%</b> (14 of 21), a complete reversal from the Detroit collapse six days ago, and the command held all night: he retired the side in order twice and stranded the only extra-base hit of the game (Tatis&rsquo;s leadoff double) without incident.
+      One inning did all the damage. The 2nd went walk, single, sac bunt, single, single, single, <b>Devers 3-run homer</b> &mdash; five straight men reaching before the first out &mdash; and every earned run of the night scored in that frame. Everywhere else, he was mostly fine: the 1st and 4th both graded clean, and he struck out the side he needed when it mattered. Net run value <b>+2.32</b>, his worst since the July slide, but concentrated almost entirely in one bad sequence rather than spread across the outing.
     </div>
     <div class="cleanbill">
-      <b>MECHANICAL CHECK:</b> clean bill of health. Velocity sat <i>above</i> season average on every pitch type (FF +0.3, SI +0.2, SL +0.8), release point was close to normal on every pitch (well inside the range that flagged issues at Detroit and Miami), and there was no in-game fade &mdash; fastball still sitting 96&ndash;97 in the 6th. No follow-up needed from this start.
+      <b>MECHANICAL CHECK:</b> velocity was fine to strong all night (FF +0.3, SI +0.4, SL +0.9 vs season, no in-game fade &mdash; 96.8 in the 1st, 96.9 in the 5th). Release point drifted toward the glove side on every pitch (&minus;0.28 to &minus;0.51 ft, in the same direction as the 8/19 DET start though less extreme) and extension ran slightly short across the board (&minus;0.01 to &minus;0.18 ft). Worth a look, not a five-alarm night &mdash; flagged for the tracking log, not urgent enough for its own triage section.
     </div>
     <div class="chips">
-      <div class="chip"><div class="v">6.0<small> ip</small></div><div class="l">Innings</div></div>
-      <div class="chip"><div class="v">87</div><div class="l">Pitches</div></div>
-      <div class="chip"><div class="v">21</div><div class="l">Batters</div></div>
-      <div class="chip hot"><div class="v">4</div><div class="l">Strikeouts</div></div>
-      <div class="chip hot"><div class="v">0</div><div class="l">Runs / Walks</div></div>
-      <div class="chip hot"><div class="v">&minus;3.05</div><div class="l">Run Value · Savant</div></div>
-      <div class="chip hot"><div class="v">66.7</div><div class="l">1st-Pitch Strike %</div></div>
-      <div class="chip"><div class="v">25.3</div><div class="l">CSW %</div></div>
+      <div class="chip"><div class="v">4.2<small> ip</small></div><div class="l">Innings</div></div>
+      <div class="chip bad"><div class="v">95</div><div class="l">Pitches</div></div>
+      <div class="chip"><div class="v">25</div><div class="l">Batters</div></div>
+      <div class="chip"><div class="v">4</div><div class="l">Strikeouts</div></div>
+      <div class="chip bad"><div class="v">5</div><div class="l">Earned Runs</div></div>
+      <div class="chip bad"><div class="v">+2.32</div><div class="l">Run Value · Savant</div></div>
+      <div class="chip warn"><div class="v">3</div><div class="l">Walks</div></div>
+      <div class="chip warn"><div class="v">52.0</div><div class="l">1st-Pitch Strike %</div></div>
     </div>
   </div>
 </header>
@@ -188,34 +192,34 @@ footer{padding:34px 0 60px;color:var(--muted2);font-family:var(--mono);font-size
 <section>
   <div class="wrap">
     <div class="eyebrow">The Macro Read</div>
-    <h2>Every time through the order, dominant</h2>
+    <h2>One inning, five straight batters, a 3-run bomb</h2>
     <p class="lead">
-      For the first time in the tracked series, <b>every stretch through the order graded strongly negative</b> &mdash; TTO1 (&minus;0.53), TTO2 (&minus;1.67, the best stretch of any start this year), and TTO3 (&minus;0.85). San Diego's only real threat was Tatis leading off the game with a double; nobody after him did anything with it, and the inning ended scoreless. From there it was mostly quick, competitive outs &mdash; nine pitches or fewer in eleven of the twenty-one plate appearances.
+      The 2nd inning alone was <b>+1.72 run value</b> &mdash; virtually the entire night&rsquo;s damage in one frame. Basabe walked, Cavanaugh singled, Whitcomb bunted them over (Skenes fielding it himself), Koss singled one in, Hill singled another in, and <b>Devers hit the third pitch of the inning&rsquo;s big at-bat 415 feet</b> for a three-run homer. Two outs later the inning was finally over at five runs. The 1st and 4th innings were both clean; the 3rd was clean; this was a one-frame problem, not a whole-game one.
     </p>
 
     <div class="tto-grid">
-      <div class="tto t1"><div class="h">1st Time Through</div><div class="ppa">4.1<small> P/PA</small></div>
-        <div class="meta">37 pitches · 9 batters · Tatis double, stranded</div><div class="bar"><i></i></div>
-        <div class="rvline">Run value <b>&minus;0.53</b></div></div>
-      <div class="tto t2"><div class="h">2nd Time Through</div><div class="ppa">4.2<small> P/PA</small></div>
-        <div class="meta">38 pitches · 9 batters · best stretch of the season</div><div class="bar"><i></i></div>
-        <div class="rvline">Run value <b>&minus;1.67</b></div></div>
-      <div class="tto t3"><div class="h">3rd Time Through</div><div class="ppa">4.0<small> P/PA</small></div>
-        <div class="meta">12 pitches · 3 batters · closed at 87</div><div class="bar"><i></i></div>
-        <div class="rvline">Run value <b>&minus;0.85</b></div></div>
+      <div class="tto t1"><div class="h">1st Time Through</div><div class="ppa">4.0<small> P/PA</small></div>
+        <div class="meta">36 pitches · 9 batters · the 2nd-inning rally</div><div class="bar"><i></i></div>
+        <div class="rvline">Run value <b>+1.52</b></div></div>
+      <div class="tto t2"><div class="h">2nd Time Through</div><div class="ppa">3.7<small> P/PA</small></div>
+        <div class="meta">33 pitches · 9 batters · clean stretch, 3rd &amp; 4th</div><div class="bar"><i></i></div>
+        <div class="rvline">Run value <b>&minus;0.15</b></div></div>
+      <div class="tto t3"><div class="h">3rd Time Through</div><div class="ppa">3.7<small> P/PA</small></div>
+        <div class="meta">26 pitches · 7 batters · pulled after 2 on in the 5th</div><div class="bar"><i></i></div>
+        <div class="rvline">Run value <b>+0.96</b></div></div>
     </div>
 
     <div class="split">
-      <div class="vbox fixable"><div class="n">0</div><div class="t">Fixable</div><div class="d">Zero walks, zero free bases, zero hit batters. A clean command night, start to finish.</div></div>
-      <div class="vbox soft"><div class="n">3</div><div class="t">Soft-Fixable</div><div class="d">Tatis&rsquo;s leadoff double, Rengifo&rsquo;s hard liner, and Cronenworth&rsquo;s hard-hit lineout &mdash; all earned, well-struck contact.</div></div>
-      <div class="vbox noise"><div class="n">2</div><div class="t">Noise</div><div class="d">Bogaerts&rsquo;s soft leadoff single (88.9 mph) and Harris&rsquo;s hard single in the 6th &mdash; placement more than damage.</div></div>
-      <div class="vbox clean"><div class="n">16</div><div class="t">Clean</div><div class="d">Four strikeouts, a double play he started himself, a sac bunt he fielded, and a string of routine or well-defended outs.</div></div>
+      <div class="vbox fixable"><div class="n">4</div><div class="t">Fixable</div><div class="d">All three walks (Basabe, and Devers twice) plus Devers&rsquo;s 3-run homer &mdash; the free bases and the one mistake pitch.</div></div>
+      <div class="vbox soft"><div class="n">7</div><div class="t">Soft-Fixable</div><div class="d">The earned hits &mdash; Hill (x3), Koss, Lee&rsquo;s loud out, Basabe, and Cavanaugh&rsquo;s double. Contact quality was mostly legitimate tonight.</div></div>
+      <div class="vbox noise"><div class="n">2</div><div class="t">Noise</div><div class="d">Whitcomb&rsquo;s sac bunt (self-fielded) and Cavanaugh&rsquo;s soft 62-mph single that started the rally.</div></div>
+      <div class="vbox clean"><div class="n">12</div><div class="t">Clean</div><div class="d">Four strikeouts and a run of routine or well-defended outs across three otherwise quiet innings.</div></div>
     </div>
 
     <div class="contact">
       <h3>Every ball in play, by exit velocity</h3>
       <div class="bbrow" id="bbrow"></div>
-      <div class="bbnote">San Diego found the barrel a handful of times &mdash; Tatis&rsquo;s 110.1-mph double, Cronenworth&rsquo;s 102.9-mph liner, Merrill&rsquo;s 99.8-mph liner &mdash; but the defense turned every one of them into an out or held the runner. The only extra-base damage all night was the leadoff double, and it never scored.</div>
+      <div class="bbnote">San Francisco hit him more than most opponents this series &mdash; five balls at 95+ mph, several of them finding grass. Unlike the recent starts where hard contact mostly found gloves, tonight a good chunk of it landed: Koss (95.0), Hill (100.3), Basabe (99.0), Cavanaugh (101.3, a double), and of course Devers at 106.3 for the homer.</div>
     </div>
   </div>
 </section>
@@ -223,43 +227,43 @@ footer{padding:34px 0 60px;color:var(--muted2);font-family:var(--mono);font-size
 <section>
   <div class="wrap">
     <div class="eyebrow">Recurring Tendencies</div>
-    <h2>What made this his best process start of the year</h2>
+    <h2>What else the night showed</h2>
     <div class="threads">
-      <div class="thread"><span class="tag">66.7% FPS</span>
-        <h3>The command flipped overnight</h3>
-        <p>Six days after a 25% first-pitch-strike collapse at Detroit, tonight&rsquo;s rate was <b>66.7%</b> &mdash; well above his 53% season norm and the best mark of the whole tracked series. Whatever showed up on the release-point charts against the Tigers wasn&rsquo;t present tonight.</p></div>
-      <div class="thread"><span class="tag">P to SS to 1B</span>
-        <h3>He started a double play himself</h3>
-        <p>Merrill&rsquo;s 4th-inning liner was speared by <b>Skenes</b>, who threw to short and around the horn to complete a double play. Add the 3rd-inning sac bunt he fielded cleanly for the out at first, and he was directly involved in ending two separate plate appearances with his glove.</p></div>
-      <div class="thread"><span class="tag">0 for 6 with RISP</span>
-        <h3>San Diego never found the extra hit</h3>
-        <p>Every runner who reached scoring position (Tatis in the 1st, Bogaerts in the 3rd) was stranded. The Padres managed only three hits across six innings and never strung two together.</p></div>
-      <div class="thread"><span class="tag">96–97 in the 6th</span>
-        <h3>No fade, no red flags</h3>
-        <p>Fastball and sinker both still sitting 95.4&ndash;96.2 in his final inning, essentially identical to the 1st. Combined with velocity running above season norm all night, this was as clean a mechanical outing as any in the tracked series &mdash; nothing here for Derek to chase.</p></div>
+      <div class="thread"><span class="tag">2 pitches</span>
+        <h3>The Devers at-bat</h3>
+        <p>A changeup for a called strike, then a fastball he turned around for 415 feet. Devers has hit Skenes hard before &mdash; this was a two-pitch at-bat against one of the best hitters in the league, not a long fight lost.</p></div>
+      <div class="thread"><span class="tag">P to 1B, again</span>
+        <h3>Third sac bunt fielded himself this season</h3>
+        <p>Whitcomb&rsquo;s bunt in the 2nd went right back to the mound &mdash; Skenes to first, same clean play he made at San Diego a week ago. Whatever else went wrong tonight, his hands and reactions were normal.</p></div>
+      <div class="thread"><span class="tag">1st &amp; 4th clean</span>
+        <h3>Bracketed by good innings</h3>
+        <p>He opened the game with a scoreless 1st (despite a leadoff single and a walk) and followed the disaster 2nd with a clean 3rd and a scoreless 4th. The stuff and the ability to escape jams were both still there outside the one bad frame.</p></div>
+      <div class="thread"><span class="tag">96.8 → 96.9</span>
+        <h3>No fatigue signature</h3>
+        <p>Fastball held flat from the 1st inning to the 5th, actually ticking up slightly at the end. The release-side drift is worth tracking against the DET pattern, but tonight&rsquo;s velocity says the arm itself was fine throughout.</p></div>
     </div>
   </div>
 </section>
 
 <div class="filterbar"><div class="wrap inner">
   <span class="fb-lab">Filter:</span>
-  <button class="fbtn on" data-f="ALL">All <span class="c">21</span></button>
-  <button class="fbtn" data-f="FIXABLE">Fixable <span class="c">0</span></button>
-  <button class="fbtn" data-f="SOFT">Soft <span class="c">3</span></button>
+  <button class="fbtn on" data-f="ALL">All <span class="c">25</span></button>
+  <button class="fbtn" data-f="FIXABLE">Fixable <span class="c">4</span></button>
+  <button class="fbtn" data-f="SOFT">Soft <span class="c">7</span></button>
   <button class="fbtn" data-f="NOISE">Noise <span class="c">2</span></button>
-  <button class="fbtn" data-f="CLEAN">Clean <span class="c">16</span></button>
+  <button class="fbtn" data-f="CLEAN">Clean <span class="c">12</span></button>
 </div></div>
 
 <section style="border-bottom:none">
   <div class="wrap">
     <div class="eyebrow" style="margin-top:8px">Hitter by Hitter</div>
     <h2>Every plate appearance, run backwards</h2>
-    <p class="lead" style="margin-bottom:6px">Three scorelines per PA: <b>Run value</b> (Savant delta_run_exp, negative = Skenes gained), <b>contact quality</b> (EV + xBA), and the <b>process tax</b>. Almost the entire card list is green tonight &mdash; watch for the two plays he fielded himself.</p>
+    <p class="lead" style="margin-bottom:6px">Three scorelines per PA: <b>Run value</b> (Savant delta_run_exp, negative = Skenes gained), <b>contact quality</b> (EV + xBA), and the <b>process tax</b>. The 2nd inning is where nearly everything red lives &mdash; watch it unfold PA by PA.</p>
     <div class="legend">
       <span><i style="background:var(--ff)"></i>4-Seam</span><span><i style="background:var(--si)"></i>Sinker</span>
       <span><i style="background:var(--fs)"></i>Splitter</span><span><i style="background:var(--ch)"></i>Changeup</span>
       <span><i style="background:var(--sl)"></i>Slider</span><span><i style="background:var(--st)"></i>Sweeper</span>
-      <span style="color:var(--muted2)">&#9711; ringed = final pitch · numbers = sequence order</span>
+      <span style="color:var(--muted2)">&#9711; ringed = final pitch · red ring = home run</span>
     </div>
     <div id="pas"></div>
   </div>
@@ -268,93 +272,105 @@ footer{padding:34px 0 60px;color:var(--muted2);font-family:var(--mono);font-size
 <section style="border-top:1px solid var(--border)">
   <div class="wrap">
     <div class="eyebrow">The Bottom Line</div>
-    <h2>The template start</h2>
-    <p class="lead">Six shutout innings with zero walks against a lineup that had punished the wrong pitch all season. Command, velocity, and execution were all firing at once &mdash; this is the version of Skenes the whole recovery arc has been building toward, and it&rsquo;s worth using as the reference point for what "right" looks like going forward.</p>
+    <h2>One bad inning cost him the start</h2>
+    <p class="lead">Strip out the 2nd and this is a clean, efficient outing &mdash; three scoreless innings around it, four strikeouts, no fatigue. Instead five straight batters reached and Devers punished a mistake for the game&rsquo;s biggest swing. The process elsewhere was sound; the fix is narrow and specific to that one sequence.</p>
     <div class="close-grid">
-      <div class="cc"><h3>Keep</h3><p>All of it. First-pitch strikes at 67%, four strikeouts, zero free bases, velocity above season norm deep into the start, and the pitcher making two plays with his glove. Nothing to adjust out of this game plan.</p></div>
-      <div class="cc"><h3>Fix</h3><p>Nothing. The only ball really squared up (Tatis&rsquo;s double) came off a lineup that had a specific answer scouted for him, and the process graded clean everywhere else. Bank this start as the standard.</p></div>
+      <div class="cc"><h3>Keep</h3><p>The three clean innings around the disaster, the velocity holding all night, and the instinct to field his own position (the sac bunt) without incident. This wasn&rsquo;t a start where the stuff or the arm was the problem.</p></div>
+      <div class="cc"><h3>Fix</h3><p>The 2nd-inning sequence specifically &mdash; a soft leadoff-adjacent walk, then contact quality crept up as the inning wore on, capped by a changeup left in Devers&rsquo;s zone. Worth a look at pitch selection once traffic starts building, and the release-side drift is worth a data point in the ongoing tracking log even though it wasn&rsquo;t severe tonight.</p></div>
     </div>
     <div class="math">
       WHAT THE LENS SAYS (official Savant):<br>
-      &bull; Run value <b>&minus;3.05</b> &mdash; best process start of the season; every TTO stretch strongly negative<br>
-      &bull; Command: <b>0 BB, 66.7% first-pitch strikes</b> &mdash; a full reversal from the 25% mark six days ago<br>
-      &bull; Mechanics: velocity above season norm on every pitch, no in-game fade, release point normal &mdash; clean bill of health<br>
-      &bull; Defense: a double play started by Skenes himself, plus a fielded sac bunt &mdash; total command of the game in every phase<br>
-      &rarr; This is the template. Nothing to chase, nothing to fix &mdash; just the standard to hold going forward.
+      &bull; Run value <b>+2.32</b> &mdash; almost entirely one inning (the 2nd, +1.72); the 1st, 3rd, and 4th were clean or better<br>
+      &bull; The rally: BB, single, sac bunt, single, single, <b>3-run HR</b> &mdash; five straight men reaching before the first out<br>
+      &bull; The stuff: 96.8&ndash;96.9 FF all night, no fade &mdash; release side drifted glove-side, worth a tracking note<br>
+      &bull; Outside the 2nd: 3 clean innings, 4 K, and a self-fielded sac bunt &mdash; the rest of the start was sound<br>
+      &rarr; A one-inning problem, not a whole-start one. Narrow, specific fix.
     </div>
   </div>
 </section>
 
 <footer><div class="wrap">
-  REVERSE GAME REPORT v1 · Skenes @ SD · 2026-08-25 · game_pk 823259 · No Brand Baseball Analytics<br>
+  REVERSE GAME REPORT v1 · Skenes vs SF · 2026-09-01 · game_pk 823340 · No Brand Baseball Analytics<br>
   Pitch &amp; batted-ball data: Baseball Savant. Run value = Savant pitch-level delta_run_exp (official).
   Verdicts grade process independent of outcome; &ldquo;Noise&rdquo; = good pitch, no help (placement/luck); &ldquo;Soft&rdquo; = earned contact.
 </div></footer>
 
 <script>
-const PITCH={"1":{"seq":[["SI",96.7,0.106,2.544],["CH",89.1,-0.007,2.341],["CH",89.0,-0.259,1.449]],"re":0.71,"szt":3.35,"szb":1.69,"ev":110.1,"la":18,"xba":0.729},"2":{"seq":[["FF",96.3,-1.138,4.269],["FS",92.7,-1.507,2.858],["FS",92.9,-1.051,1.91],["FF",97.1,-0.202,2.961],["SI",96.6,0.508,2.921],["ST",86.2,0.572,0.912]],"re":-0.333,"szt":3.17,"szb":1.6},"3":{"seq":[["SI",96.9,0.361,1.993],["SI",97.0,0.913,1.859],["SI",97.1,-0.171,2.892],["ST",84.2,0.838,2.822]],"re":-0.271,"szt":3.31,"szb":1.67,"ev":81.3,"la":67,"xba":0.001},"4":{"seq":[["FF",97.2,-0.991,3.087],["FF",97.9,0.757,3.134],["ST",84.0,0.659,2.442]],"re":-0.281,"szt":3.1,"szb":1.57,"ev":83.1,"la":73,"xba":0.001},"5":{"seq":[["FS",93.7,-0.343,1.395],["FS",94.7,0.979,1.257],["FF",97.6,-0.168,2.811],["FF",97.6,-0.328,3.676],["CH",89.6,-2.612,3.657],["FS",93.4,-1.125,2.464]],"re":-0.259,"szt":3.32,"szb":1.68,"ev":88.1,"la":-36,"xba":0.049},"6":{"seq":[["ST",84.4,-0.378,2.989],["FF",97.6,-0.44,3.657],["FS",94.1,-1.048,2.949],["SI",97.9,1.397,1.197],["FF",97.8,-0.507,3.119],["SL",86.8,-1.111,2.28],["FF",98.0,-0.285,2.799]],"re":-0.262,"szt":3.09,"szb":1.56,"ev":99.2,"la":17,"xba":0.486},"7":{"seq":[["SI",97.9,-0.17,2.531],["SL",87.6,1.263,1.184],["SL",86.9,-0.831,2.325],["ST",84.1,0.655,1.222],["ST",85.9,1.288,1.666],["SI",98.6,0.659,1.595]],"re":-0.259,"szt":3.12,"szb":1.57},"8":{"seq":[["SI",97.7,-0.34,2.904]],"re":0.444,"szt":3.28,"szb":1.66,"ev":88.9,"la":1,"xba":0.335},"9":{"seq":[["FF",97.3,0.108,3.044]],"re":-0.022,"szt":3.32,"szb":1.67,"ev":30.7,"la":-9},"10":{"seq":[["FF",97.1,-0.103,3.207],["SL",86.8,1.035,1.139],["SL",86.8,1.064,1.45],["SL",87.2,0.37,1.064],["SI",97.5,0.282,2.736]],"re":-0.271,"szt":3.35,"szb":1.69,"ev":90.1,"la":28,"xba":0.063},"11":{"seq":[["FS",93.5,-0.126,1.824]],"re":-0.281,"szt":3.17,"szb":1.6,"ev":102.9,"la":17,"xba":0.429},"12":{"seq":[["SI",96.2,-1.382,2.742],["ST",83.0,-1.416,2.568],["SI",96.9,0.453,1.933],["SI",96.7,-0.692,2.254],["SL",87.3,-0.98,2.321]],"re":-0.26,"szt":3.31,"szb":1.67,"ev":51.0,"la":49,"xba":0.02},"13":{"seq":[["FF",97.0,-0.919,3.579],["FF",97.5,0.083,2.951],["FF",97.8,0.124,3.379],["FF",97.2,0.038,3.23],["ST",84.0,0.218,2.745],["FF",97.5,-0.145,2.951]],"re":-0.262,"szt":3.1,"szb":1.57,"ev":80.0,"la":-22,"xba":0.048},"14":{"seq":[["FS",91.9,0.191,1.901],["CH",88.7,-0.111,0.542],["FS",93.0,-0.51,1.554],["FF",97.6,0.315,2.271]],"re":-0.259,"szt":3.32,"szb":1.68,"ev":99.8,"la":6,"xba":0.626},"15":{"seq":[["ST",82.3,-1.776,2.789],["FS",93.5,0.422,2.389],["FF",97.2,-0.226,3.883],["FF",97.9,1.053,2.835],["FF",96.9,-0.072,1.471],["SI",98.4,0.312,1.498]],"re":-0.26,"szt":3.09,"szb":1.56},"16":{"seq":[["FS",92.9,-0.367,1.854],["ST",83.6,-0.859,3.129],["SI",97.3,0.25,1.484],["CH",88.0,-0.487,0.732],["FF",97.1,-0.822,3.896],["SL",89.0,0.88,0.692]],"re":-0.262,"szt":3.12,"szb":1.57},"17":{"seq":[["SI",97.3,-0.094,1.764],["SL",88.3,2.277,0.092],["SI",97.8,0.925,1.059],["SI",97.3,0.39,2.342]],"re":-0.259,"szt":3.28,"szb":1.66,"ev":97.8,"la":-20,"xba":0.133},"18":{"seq":[["FF",96.2,-0.174,3.159]],"re":0.444,"szt":3.32,"szb":1.67,"ev":104.3,"la":18,"xba":0.506},"19":{"seq":[["SI",94.4,-1.19,2.867],["SL",87.3,0.097,1.578],["SI",95.7,-1.724,2.709],["SI",95.9,-1.139,2.138]],"re":-0.247,"szt":3.35,"szb":1.69,"ev":68.7,"la":17,"xba":0.586},"20":{"seq":[["FF",95.7,0.266,2.648],["FF",95.8,-1.83,4.04],["SI",94.6,-1.344,3.742],["ST",84.4,-1.144,3.115],["FF",96.7,-0.588,2.404],["SI",96.1,-0.88,2.022]],"re":-0.319,"szt":3.17,"szb":1.6,"ev":95.6,"la":-3,"xba":0.308},"21":{"seq":[["SL",87.5,-0.415,2.193],["SI",95.4,-1.316,2.603]],"re":-0.281,"szt":3.31,"szb":1.67,"ev":52.3,"la":64,"xba":0.001}};
+const PITCH={"1":{"seq":[["SI",96.4,-0.402,1.947],["FF",96.4,-2.007,3.425],["ST",84.1,-0.568,2.33],["FF",97.1,-2.372,3.907],["SI",96.6,0.162,2.404]],"re":0.445,"szt":3.14,"szb":1.58,"ev":91.5,"la":-15,"xba":0.108},"2":{"seq":[["SI",96.6,0.235,2.747],["FF",96.6,-0.07,4.266],["FF",96.9,1.081,2.73],["FS",92.5,-1.164,2.615],["CH",88.4,1.178,1.126]],"re":0.41,"szt":3.22,"szb":1.62},"3":{"seq":[["FS",92.1,-1.242,2.991],["ST",84.9,-1.797,3.349],["SI",97.1,-0.198,2.166],["CH",90.7,-0.108,0.477],["SI",96.2,0.26,2.953],["SI",97.3,0.626,2.476]],"re":-0.251,"szt":3.54,"szb":1.79,"ev":60.4,"la":56,"xba":0.011},"4":{"seq":[["ST",85.2,2.032,1.218],["ST",84.4,-0.769,2.668],["ST",85.1,0.604,3.759],["FF",97.1,1.153,2.395],["FF",96.8,-0.593,2.872]],"re":-0.242,"szt":3.29,"szb":1.66,"ev":86.8,"la":70,"xba":0.003},"5":{"seq":[["FS",93.1,-0.222,3.133],["SI",96.6,-0.005,2.211]],"re":-0.283,"szt":3.22,"szb":1.63,"ev":100.2,"la":16,"xba":0.54},"6":{"seq":[["SI",97.1,-0.218,2.455],["SL",89.1,-0.102,3.051],["SL",88.0,0.733,-0.058],["SI",97.8,-0.693,2.288],["SL",89.2,-0.571,1.453],["SI",97.6,-1.192,2.242],["CH",87.7,-1.774,1.504],["SI",98.0,-1.439,2.111]],"re":0.447,"szt":3.18,"szb":1.61},"7":{"seq":[["FF",97.4,-0.469,2.779],["FF",97.6,0.575,3.116],["FF",97.7,0.247,2.89]],"re":0.467,"szt":3.2,"szb":1.62,"ev":62.4,"la":17,"xba":0.286},"8":{"seq":[["FF",98.5,-1.045,3.206]],"re":0.025,"szt":3.23,"szb":1.63,"ev":25.2,"la":31},"9":{"seq":[["FF",97.3,0.259,3.131]],"re":0.503,"szt":3.25,"szb":1.64,"ev":95.0,"la":4,"xba":0.471},"10":{"seq":[["FS",92.7,-0.729,1.485],["FS",93.5,-0.614,2.127]],"re":0.464,"szt":3.14,"szb":1.58,"ev":86.6,"la":13,"xba":0.86},"11":{"seq":[["CH",88.1,-1.657,2.539],["FF",97.8,-0.054,2.38]],"re":1.199,"szt":3.22,"szb":1.62,"ev":106.3,"la":25,"xba":0.92,"hr":415},"12":{"seq":[["SL",86.2,-1.488,2.588],["SI",97.6,0.947,1.968],["SL",86.5,-0.95,2.599],["SI",97.6,0.124,2.141]],"re":-0.262,"szt":3.54,"szb":1.79,"ev":91.1,"la":-6,"xba":0.171},"13":{"seq":[["SL",85.1,-0.409,2.495],["ST",85.2,0.982,2.42],["ST",85.3,1.147,1.609],["FF",97.8,-0.223,2.123],["FF",97.6,0.561,2.76]],"re":-0.257,"szt":3.29,"szb":1.66},"14":{"seq":[["FF",97.1,-0.486,4.456],["ST",84.2,-2.482,2.55],["SI",95.8,-0.894,2.863],["FF",96.8,-0.308,2.855]],"re":-0.258,"szt":3.22,"szb":1.63,"ev":83.7,"la":27,"xba":0.117},"15":{"seq":[["SI",97.6,-0.371,2.386]],"re":-0.261,"szt":3.18,"szb":1.61,"ev":81.7,"la":-26,"xba":0.062},"16":{"seq":[["FF",97.3,-0.103,3.506],["FF",97.4,-0.182,2.56],["SL",89.7,0.001,1.077],["FF",96.5,-0.129,2.968],["FF",97.4,-1.201,3.423]],"re":-0.258,"szt":3.2,"szb":1.62},"17":{"seq":[["FF",96.6,-0.173,2.925],["FF",96.8,-0.992,3.334],["FF",97.2,0.214,4.144],["FF",97.3,-0.317,3.26],["ST",84.3,1.079,2.562]],"re":-0.259,"szt":3.23,"szb":1.63,"ev":78.1,"la":63,"xba":0.011},"18":{"seq":[["SI",97.1,-0.935,2.6],["ST",83.1,-0.51,2.958],["ST",84.7,-0.219,1.757],["SI",97.2,-0.371,1.5],["ST",84.2,0.218,2.121]],"re":-0.261,"szt":3.25,"szb":1.64,"ev":96.7,"la":-2,"xba":0.459},"19":{"seq":[["ST",83.5,0.754,1.793],["FF",97.5,-0.293,1.883]],"re":0.332,"szt":3.14,"szb":1.58,"ev":100.3,"la":3,"xba":0.54},"20":{"seq":[["FF",96.0,-0.446,4.052],["SI",96.2,-0.704,3.644],["CH",89.8,-0.672,0.835],["ST",84.8,-0.393,1.229]],"re":0.265,"szt":3.22,"szb":1.62},"21":{"seq":[["FS",93.6,-0.186,2.365],["FS",92.9,-0.008,0.439],["ST",85.2,0.326,2.708],["SL",86.7,1.542,-0.329],["SI",97.0,0.454,3.379]],"re":-0.282,"szt":3.54,"szb":1.79},"22":{"seq":[["SI",96.6,-1.235,1.45],["ST",84.3,0.652,2.86],["ST",84.9,0.906,1.533],["FF",96.8,-0.951,3.593]],"re":-0.258,"szt":3.29,"szb":1.66},"23":{"seq":[["SI",97.5,-0.467,2.862]],"re":-0.261,"szt":3.22,"szb":1.63,"ev":99.0,"la":1,"xba":0.477},"24":{"seq":[["SI",96.1,0.205,3.615],["SI",97.4,-1.037,3.567],["SI",97.3,-0.625,3.079],["SI",97.6,-0.824,2.27],["FF",97.7,0.193,3.022]],"re":0.332,"szt":3.18,"szb":1.61,"ev":101.3,"la":7,"xba":0.637},"25":{"seq":[["FF",96.9,0.518,2.074],["FF",96.9,0.284,3.248],["FF",96.0,-0.089,3.494],["FF",96.8,-1.465,4.4],["SI",96.6,-0.598,2.921]],"re":0.827,"szt":3.2,"szb":1.62,"ev":87.3,"la":10,"xba":0.52}};
 
 const DATA=[
-{pa:1,inn:1,tto:1,nm:'Fernando Tatis Jr.',h:'R',res:'Double',rt:'hit',
- happened:'Sinker, then two changeups; Tatis lined the second changeup at <b>110.1 mph</b> (xBA .73) for a leadoff double.',
- mechanism:'Earned, elite contact by an elite hitter &mdash; the one legitimately hard-hit ball of the game that also found space. Tip the cap.',cf:'Limited.',exp:'A double or better against contact this authoritative.',v:'SOFT',tax:'Earned leadoff double (stranded)'},
-{pa:2,inn:1,tto:1,nm:'Jake Cronenworth',h:'L',res:'K swinging',rt:'k',
- happened:'Six pitches through fastball, splitter, sinker, and sweeper &mdash; swinging K.',mechanism:'A needed strikeout right after the leadoff double.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
-{pa:3,inn:1,tto:1,nm:'Manny Machado',h:'R',res:'Pop Out',rt:'out',
- happened:'Three sinkers, then a sweeper; Machado popped it up at 67&deg; (81.3 mph, xBA .001) to short.',mechanism:'Soft, harmless contact.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
-{pa:4,inn:1,tto:1,nm:'Ty France',h:'R',res:'Pop Out',rt:'out',
- happened:'Two fastballs, then a sweeper; France popped it foul at 73&deg; (83.1 mph, xBA .001) to first. Scoreless 1st complete despite the double.',
- mechanism:'Stranded Tatis at second to close the inning at zero.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None &mdash; scoreless 1st'},
-{pa:5,inn:2,tto:1,nm:'Jackson Merrill',h:'L',res:'Groundout',rt:'out',
- happened:'Six pitches mixing splitter, fastball, and changeup; Merrill grounded out at 88.1 mph (xBA .05, &minus;36&deg;) to open the 2nd.',
- mechanism:'Hard contact into the ground, routine out.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
-{pa:6,inn:2,tto:1,nm:'Luis Rengifo',h:'L',res:'Lineout',rt:'out',
- happened:'Seven pitches through the full arsenal; Rengifo lined the last fastball at 99.2 mph (xBA .49) to left &mdash; caught.',
- mechanism:'Nearly a hit &mdash; a well-struck liner that found a glove. Earned quality contact.',cf:'None on the result.',exp:'A hit close to half the time; caught tonight.',v:'SOFT',tax:'Loud out, could have fallen'},
-{pa:7,inn:2,tto:1,nm:'Luis Campusano',h:'R',res:'K (foul tip)',rt:'k',
- happened:'Six pitches mixing sinker, slider, and sweeper &mdash; strikeout on a foul tip to end the 2nd.',mechanism:'Clean escape, scoreless through two.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None &mdash; scoreless 2nd'},
-{pa:8,inn:3,tto:2,nm:'Xander Bogaerts',h:'R',res:'Single',rt:'hit',
- happened:'First pitch, a sinker; Bogaerts grounded it to left at 88.9 mph (xBA .34) for a single.',
- mechanism:'Medium contact that found grass &mdash; more placement than authority relative to its exit velo.',cf:'Limited.',exp:'A hit some of the time on this quality of contact.',v:'NOISE',tax:'Leadoff single, moderate contact'},
-{pa:9,inn:3,tto:2,nm:'Dustin Harris',h:'L',res:'Sac Bunt',rt:'sac',
- happened:'First pitch, a fastball; Harris bunted it back to the mound &mdash; <b>Skenes fielded it himself</b> and threw to first, advancing Bogaerts to second.',
- mechanism:'A clean fielding play by the pitcher, executing exactly what a sacrifice bunt asks of the defense.',cf:'None.',exp:'Out at first, runner advances &mdash; textbook.',v:'CLEAN',tax:'None &mdash; self-fielded sac bunt'},
-{pa:10,inn:3,tto:2,nm:'Fernando Tatis Jr.',h:'R',res:'Flyout',rt:'out',
- happened:'Fastball, three sliders, then a sinker; Tatis flew out to center at 90.1 mph (xBA .06) with Bogaerts on second.',
- mechanism:'Hard contact that stayed in the air and got caught &mdash; no damage despite the runner in scoring position.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None &mdash; runner in scoring position, no damage'},
-{pa:11,inn:3,tto:2,nm:'Jake Cronenworth',h:'L',res:'Lineout',rt:'out',
- happened:'First pitch, a splitter; Cronenworth lined it hard to center at 102.9 mph (xBA .43) &mdash; caught. Scoreless 3rd complete, Bogaerts stranded.',
- mechanism:'The loudest ball allowed to that point, and it found a glove. Inning over at zero.',cf:'None on the result.',exp:'A hit close to half the time; caught tonight.',v:'SOFT',tax:'Loud out, stranded the runner'},
-{pa:12,inn:4,tto:2,nm:'Manny Machado',h:'R',res:'Pop Out',rt:'out',
- happened:'Five pitches mixing sinker, sweeper, and slider; Machado popped it up at 49&deg; (51.0 mph, xBA .02) to short to open the 4th.',mechanism:'Very soft contact, harmless.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
-{pa:13,inn:4,tto:2,nm:'Ty France',h:'R',res:'Groundout',rt:'out',
- happened:'Six pitches, fastball-heavy with one sweeper mixed in; France grounded out at 80.0 mph (xBA .05) to short.',mechanism:'Medium-soft contact, routine out.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
-{pa:14,inn:4,tto:2,nm:'Jackson Merrill',h:'L',res:'Lineout (DP)',rt:'dp',
- happened:'Splitter, changeup, splitter, then a fastball; Merrill lined it hard at 99.8 mph (xBA .63) right back to <b>Skenes</b>, who threw to short and around the horn to complete a double play.',
- mechanism:'The defensive play of the game &mdash; a near-certain base hit turned into two outs by the pitcher&rsquo;s own glove and a strong relay.',cf:'None &mdash; this IS the counterfactual working.',exp:'A hit most of the time; a double play tonight.',v:'CLEAN',tax:'None &mdash; Skenes-started double play'},
-{pa:15,inn:5,tto:3,nm:'Luis Rengifo',h:'L',res:'K swinging',rt:'k',
- happened:'Six pitches through sweeper, splitter, fastball, and sinker &mdash; swinging K to open the 5th.',mechanism:'Clean strikeout, full arsenal on display.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
-{pa:16,inn:5,tto:3,nm:'Luis Campusano',h:'R',res:'K swinging',rt:'k',
- happened:'Six pitches mixing splitter, sweeper, sinker, changeup, fastball, and slider &mdash; swinging K.',mechanism:'A complete tour of the arsenal ending in a whiff.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
-{pa:17,inn:5,tto:3,nm:'Xander Bogaerts',h:'R',res:'Groundout',rt:'out',
- happened:'Sinker, slider, two more sinkers; Bogaerts grounded out at 97.8 mph (xBA .13, &minus;20&deg;) to short. Scoreless 5th complete.',
- mechanism:'Hard contact hit on the ground, routine out despite the exit velo.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None &mdash; scoreless 5th'},
-{pa:18,inn:6,tto:3,nm:'Dustin Harris',h:'L',res:'Single',rt:'hit',
- happened:'First pitch, a fastball; Harris lined it sharply to right at 104.3 mph (xBA .51) for a single to open the 6th.',
- mechanism:'Earned, hard contact &mdash; a legitimate knock, though it would go nowhere.',cf:'Limited.',exp:'A hit about half the time on contact this hard.',v:'NOISE',tax:'Earned leadoff single (stranded)'},
-{pa:19,inn:6,tto:3,nm:'Fernando Tatis Jr.',h:'R',res:'Lineout',rt:'out',
- happened:'Sinker, slider, two more sinkers; Tatis lined out to second at 68.7 mph (xBA .59) &mdash; caught despite a favorable xBA.',
- mechanism:'A ball the model liked for Tatis found a glove instead. Harris stays at first.',cf:'None on the result.',exp:'A hit more often than not, per the model; caught tonight.',v:'CLEAN',tax:'None (fortunate)'},
-{pa:20,inn:6,tto:3,nm:'Jake Cronenworth',h:'L',res:'Groundout',rt:'out',
- happened:'Six pitches mixing fastball, sinker, and sweeper; Cronenworth grounded out at 95.6 mph to third, Harris advancing to second.',
- mechanism:'Hard contact on the ground, productive out that moved the runner but changed nothing.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None &mdash; runner advanced harmlessly'},
-{pa:21,inn:6,tto:3,nm:'Manny Machado',h:'R',res:'Pop Out',rt:'out',
- happened:'Slider, then a sinker; Machado popped it up at 64&deg; (52.3 mph, xBA .001) to third. Night over: 6.0 IP, 87 pitches, shutout intact.',
- mechanism:'Soft, harmless contact closes a complete shutout through six.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None &mdash; final out, shutout through 6'},
+{pa:1,inn:1,tto:1,nm:'Turner Hill',h:'L',res:'Single',rt:'hit',
+ happened:'Sinker, fastball, sweeper, fastball, sinker; Hill lined the last one to left at 91.5 mph (xBA .11, &minus;15&deg;) for a leadoff single.',
+ mechanism:'A hard-hit ball at a low launch angle that snuck through &mdash; more earned than lucky given the exit velo.',cf:'Limited.',exp:'A hit some of the time on contact this hard.',v:'SOFT',tax:'Leadoff single'},
+{pa:2,inn:1,tto:1,nm:'Rafael Devers',h:'L',res:'Walk',rt:'bb',
+ happened:'Sinker, two fastballs, splitter, changeup &mdash; a five-pitch walk moving Hill to second.',
+ mechanism:'Free runner in front of the best bat in the lineup &mdash; the kind of walk that costs more than most.',cf:'A competitive final pitch.',exp:'No free runner ahead of Devers.',v:'FIXABLE',tax:'5-pitch walk, in front of Devers'},
+{pa:3,inn:1,tto:1,nm:'Bryce Eldridge',h:'L',res:'Pop Out',rt:'out',
+ happened:'Splitter, sweeper, sinker, changeup, two more sinkers; Eldridge popped it foul at 56&deg; (60.4 mph, xBA .01) to third.',
+ mechanism:'A long at-bat that ended in the softest possible contact.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'Minimal'},
+{pa:4,inn:1,tto:1,nm:'Jonah Cox',h:'R',res:'Pop Out',rt:'out',
+ happened:'Three sweepers, two fastballs; Cox popped it up at 70&deg; (86.8 mph, xBA .003) &mdash; ruled an infield fly.',
+ mechanism:'Hard contact straight up, harmless by rule.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
+{pa:5,inn:1,tto:1,nm:'Jung Hoo Lee',h:'L',res:'Lineout',rt:'out',
+ happened:'Splitter, then a sinker; Lee lined it sharply to center at 100.2 mph (xBA .54) &mdash; caught. Scoreless 1st complete despite two on.',
+ mechanism:'The loudest ball of the inning found a glove. A real escape given the traffic.',cf:'None on the result.',exp:'A hit about half the time; caught tonight.',v:'SOFT',tax:'Loud out, stranded 2 runners &mdash; scoreless 1st'},
+{pa:6,inn:2,tto:1,nm:'Osleivis Basabe',h:'R',res:'Walk',rt:'bb',
+ happened:'Eight pitches mixing sinker, slider, and changeup &mdash; a leadoff walk to open the 2nd.',
+ mechanism:'The free runner that started the whole inning. A real battle, not a clean miss, but it opened the door.',cf:'A competitive final pitch.',exp:'No leadoff free runner.',v:'FIXABLE',tax:'8-pitch leadoff walk &mdash; opened the rally'},
+{pa:7,inn:2,tto:1,nm:'Drew Cavanaugh',h:'L',res:'Single',rt:'hit',
+ happened:'Three fastballs; Cavanaugh grounded the last one to short at just 62.4 mph (xBA .29) for a single, Basabe to second.',
+ mechanism:'Soft, placement-driven contact &mdash; the kind of ball that&rsquo;s an out more often than not.',cf:'A step of positioning.',exp:'An out most of the time on contact this soft.',v:'NOISE',tax:'62-mph placement single'},
+{pa:8,inn:2,tto:1,nm:'Shay Whitcomb',h:'R',res:'Sac Bunt',rt:'sac',
+ happened:'First pitch, a fastball; Whitcomb bunted it back to the mound &mdash; <b>Skenes fielded it himself</b> and threw to first, advancing both runners.',
+ mechanism:'Clean fielding play, exactly as designed &mdash; his third self-fielded sac bunt of the season.',cf:'None.',exp:'Out at first, runners advance &mdash; textbook.',v:'NOISE',tax:'None &mdash; self-fielded, runners advanced by design'},
+{pa:9,inn:2,tto:1,nm:'Christian Koss',h:'R',res:'Single, RBI',rt:'hit',
+ happened:'First pitch, a fastball; Koss lined it to right at 95.0 mph (xBA .47), scoring Basabe. Run 1.',
+ mechanism:'Earned, hard contact on a get-me-over first pitch with two in scoring position.',cf:'Limited.',exp:'A hit close to half the time.',v:'SOFT',tax:'Earned RBI single'},
+{pa:10,inn:2,tto:1,nm:'Turner Hill',h:'L',res:'Single, RBI',rt:'hit',
+ happened:'Two splitters; Hill lined the second to center at 86.6 mph (xBA .86) &mdash; a near-certain hit &mdash; scoring Cavanaugh. Run 2.',
+ mechanism:'Legitimately well-earned contact, second time through the order.',cf:'Limited.',exp:'A hit; the xBA says almost always.',v:'SOFT',tax:'Earned RBI single'},
+{pa:11,inn:2,tto:1,nm:'Rafael Devers',h:'L',res:'Home Run',rt:'hr',
+ happened:'A changeup taken for a strike, then a fastball Devers drove <b>415 feet</b> to center &mdash; 106.3 mph, xBA .92. Three-run homer.',
+ mechanism:'The single biggest swing of the night (+1.20 RV). A well-located changeup set up a fastball that caught too much of the plate against one of the best hitters in the league.',
+ cf:'A pitch off the barrel on 1-1 instead of a fastball he could drive.',exp:'A double at minimum on contact this hard; a three-run homer tonight.',v:'FIXABLE',tax:'3-run HR, the pitch of the game'},
+{pa:12,inn:2,tto:1,nm:'Bryce Eldridge',h:'L',res:'Groundout',rt:'out',
+ happened:'Slider, sinker, slider, sinker; Eldridge grounded out at 91.1 mph (xBA .17, &minus;6&deg;) to second.',
+ mechanism:'Hard contact on the ground, routine out. First sign of the inning settling down.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
+{pa:13,inn:2,tto:1,nm:'Jonah Cox',h:'R',res:'K swinging',rt:'k',
+ happened:'Slider, two sweepers, two fastballs &mdash; swinging K to finally end a five-run 2nd.',mechanism:'Stopped the bleeding at five.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None &mdash; capped the inning at 5'},
+{pa:14,inn:3,tto:2,nm:'Jung Hoo Lee',h:'L',res:'Lineout',rt:'out',
+ happened:'Fastball, sweeper, sinker, fastball; Lee lined out to left at 83.7 mph (xBA .12) to open the 3rd.',mechanism:'Medium contact, routine out.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
+{pa:15,inn:3,tto:2,nm:'Osleivis Basabe',h:'R',res:'Groundout',rt:'out',
+ happened:'First pitch, a sinker; Basabe grounded out at 81.7 mph (xBA .06, &minus;26&deg;) to short.',mechanism:'Quick, efficient out.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
+{pa:16,inn:3,tto:2,nm:'Drew Cavanaugh',h:'L',res:'K swinging',rt:'k',
+ happened:'Four fastballs and a slider &mdash; swinging K. Scoreless 3rd complete.',mechanism:'Clean inning, first real answer to the 2nd.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None &mdash; scoreless 3rd'},
+{pa:17,inn:4,tto:2,nm:'Shay Whitcomb',h:'R',res:'Pop Out',rt:'out',
+ happened:'Four fastballs, then a sweeper; Whitcomb popped it foul at 63&deg; (78.1 mph, xBA .01) to first to open the 4th.',mechanism:'Soft contact, harmless.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
+{pa:18,inn:4,tto:2,nm:'Christian Koss',h:'R',res:'Groundout',rt:'out',
+ happened:'Sinker, two sweepers, sinker, sweeper; Koss grounded out at 96.7 mph (xBA .46, &minus;2&deg;) to third.',mechanism:'Hard contact on the ground, routine out despite the exit velo.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
+{pa:19,inn:4,tto:2,nm:'Turner Hill',h:'L',res:'Single',rt:'hit',
+ happened:'Sweeper, then a fastball; Hill lined it to right at 100.3 mph (xBA .54) for a single.',
+ mechanism:'Earned, hard contact &mdash; his third hit of the night.',cf:'Limited.',exp:'A hit about half the time.',v:'SOFT',tax:'Earned single (3rd hit of the game)'},
+{pa:20,inn:4,tto:2,nm:'Rafael Devers',h:'L',res:'Walk',rt:'bb',
+ happened:'Fastball, sinker, changeup, sweeper &mdash; a four-pitch walk moving Hill to second.',
+ mechanism:'A second free pass to Devers on the night, though this one didn&rsquo;t get burned.',cf:'A competitive finishing pitch.',exp:'No free runner.',v:'FIXABLE',tax:'4-pitch walk to Devers (stranded)'},
+{pa:21,inn:4,tto:2,nm:'Bryce Eldridge',h:'L',res:'K looking',rt:'k',
+ happened:'Two splitters, sweeper, slider, then a sinker frozen for the call &mdash; strikeout looking to end the 4th scoreless.',
+ mechanism:'A big strikeout with two runners on to close the inning at zero.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None &mdash; scoreless 4th, stranded 2'},
+{pa:22,inn:5,tto:3,nm:'Jonah Cox',h:'R',res:'K swinging',rt:'k',
+ happened:'Sinker, two sweepers, fastball &mdash; swinging K to open the 5th.',mechanism:'Clean strikeout to start the frame.',cf:'None.',exp:'K.',v:'CLEAN',tax:'None'},
+{pa:23,inn:5,tto:3,nm:'Jung Hoo Lee',h:'L',res:'Groundout',rt:'out',
+ happened:'First pitch, a sinker; Lee grounded out at 99.0 mph (xBA .48, 1&deg;) to short.',mechanism:'Hard contact hit right at the shortstop.',cf:'None.',exp:'Out.',v:'CLEAN',tax:'None'},
+{pa:24,inn:5,tto:3,nm:'Osleivis Basabe',h:'R',res:'Single',rt:'hit',
+ happened:'Four sinkers, then a fastball; Basabe lined the fastball to right at 101.3 mph (xBA .64) for a single.',
+ mechanism:'Earned, hard contact &mdash; a legitimate knock on a long at-bat.',cf:'Limited.',exp:'A hit most of the time on contact this hard.',v:'SOFT',tax:'Earned single'},
+{pa:25,inn:5,tto:3,nm:'Drew Cavanaugh',h:'L',res:'Double',rt:'hit',
+ happened:'Four fastballs, then a sinker; Cavanaugh lined the last one to left at 87.3 mph (xBA .52) for a double, Basabe to third. Skenes was pulled after this pitch: 95 pitches, 4.2 IP.',
+ mechanism:'Earned contact that put two more in scoring position &mdash; the pitch count and the traffic together ended his night.',cf:'Limited.',exp:'A hit close to half the time.',v:'SOFT',tax:'Double, final pitch of the outing'},
 ];
 
 const PCOLOR={FF:'#e23b4e',SI:'#f6892b',FS:'#2fb6c4',CH:'#33c46b',SL:'#f4c542',ST:'#9b6dff',CU:'#4aa3df'};
-function zone(pa,stand){
+function zone(pa,stand,isHR){
   const d=PITCH[pa]; if(!d) return '';
   const W=158,H=188,padX=14,padT=12,padB=30;
   const xMin=-2.0,xMax=2.0,zMin=0.4,zMax=4.6;
@@ -377,21 +393,22 @@ function zone(pa,stand){
     cxp=clamp(cxp,9,W-9); cyp=clamp(cyp,9,H-padB+10);
     const isFinal=i===d.seq.length-1;
     const dark=['SL','CH'].includes(t);
-    s+=`<circle cx="${cxp}" cy="${cyp}" r="9" fill="${PCOLOR[t]}" fill-opacity="${raw_in?1:0.55}" stroke="${isFinal?'#fff':'rgba(0,0,0,.35)'}" stroke-width="${isFinal?2:1}"${raw_in?'':' stroke-dasharray="2 1.5"'}/>`;
+    const ring=isFinal?(isHR?'#e23b4e':'#fff'):'rgba(0,0,0,.35)';
+    s+=`<circle cx="${cxp}" cy="${cyp}" r="9" fill="${PCOLOR[t]}" fill-opacity="${raw_in?1:0.55}" stroke="${ring}" stroke-width="${isFinal?(isHR?2.5:2):1}"${raw_in?'':' stroke-dasharray="2 1.5"'}/>`;
     s+=`<text x="${cxp}" y="${cyp+3.3}" text-anchor="middle" font-size="9.5" font-weight="700" font-family="JetBrains Mono" fill="${dark?'#10140f':'#fff'}" paint-order="stroke" stroke="${dark?'rgba(255,255,255,.5)':'rgba(0,0,0,.35)'}" stroke-width=".5">${i+1}</text>`;
   });
   return s+`</svg>`;
 }
 function evClass(ev){return ev>=98?'hard':ev>=88?'med':'soft';}
 function rvChip(re){const good=re<0;return `<span class="rv">Run value <span class="num ${good?'good':'bad'}">${(re<0?'\u2212':'+')+Math.abs(re).toFixed(2)}</span></span>`;}
-function pill(p,i,last){return `<div class="pill t-${p[0]}${i===last?' final':''}"><span class="ord">${i+1}</span><span class="pt">${p[0]}</span><span class="vl">${Math.round(p[1])}</span></div>`;}
+function pill(p,i,last,isHR){const cls=i===last?(isHR?' final finalhr':' final'):'';return `<div class="pill t-${p[0]}${cls}"><span class="ord">${i+1}</span><span class="pt">${p[0]}</span><span class="vl">${Math.round(p[1])}</span></div>`;}
 
 function card(d){
-  const pd=PITCH[d.pa],seq=pd.seq,last=seq.length-1;
+  const pd=PITCH[d.pa],seq=pd.seq,last=seq.length-1,isHR=d.rt==='hr';
   let bb='';
   if(pd.ev!=null){const c=evClass(pd.ev);
-    bb=`<div class="bbtag ${c}">Contact <b>${pd.ev} mph</b> · ${pd.la}&deg; LA${pd.xba!=null?` · xBA <b>${pd.xba.toFixed(3)}</b>`:''}</div>`;}
-  return `<div class="pa" data-v="${d.v}">
+    bb=`<div class="bbtag ${isHR?'hrtag':c}">Contact <b>${pd.ev} mph</b> · ${pd.la}&deg; LA${pd.xba!=null?` · xBA <b>${pd.xba.toFixed(3)}</b>`:''}${pd.hr?` · ${pd.hr} ft`:''}</div>`;}
+  return `<div class="pa${isHR?' hrpa':''}" data-v="${d.v}">
     <div class="pa-top">
       <div class="pa-num">PA ${d.pa}<br>T${d.tto}</div>
       <div class="pa-id"><div class="nm">${d.nm}<span class="hand">${d.h}HH</span></div>
@@ -399,9 +416,9 @@ function card(d){
       <div class="pa-res"><div class="r ${d.rt}">${d.res}</div><div class="pc">${seq.length}P</div></div>
     </div>
     <div class="midrow">
-      <div class="zonebox">${zone(d.pa,d.h)}<div class="zonecap">Catcher's view</div></div>
+      <div class="zonebox">${zone(d.pa,d.h,isHR)}<div class="zonecap">Catcher's view</div></div>
       <div class="seqcol"><div class="seqlab">Sequence</div>
-        <div class="seq">${seq.map((p,i)=>pill(p,i,last)).join('')}</div>${bb}</div>
+        <div class="seq">${seq.map((p,i)=>pill(p,i,last,isHR)).join('')}</div>${bb}</div>
     </div>
     <div class="anat">
       <div class="row"><div class="lab">Happened</div><div class="val">${d.happened}</div></div>
@@ -417,7 +434,7 @@ function card(d){
 }
 function render(){
   const byInn={}; DATA.forEach(d=>{(byInn[d.inn]=byInn[d.inn]||[]).push(d)});
-  const score={1:'0-0 · Tatis 2B, stranded',2:'0-0',3:'0-0 · sac bunt + flyout hold',4:'0-0 · self-started DP',5:'0-0',6:'0-0 · shutout through 6'};
+  const score={1:'0-0',2:'SF 5 · Devers 3R HR',3:'SF 5',4:'SF 5',5:'SF 5 · pulled at 95'};
   let html='';
   Object.keys(byInn).forEach(inn=>{
     html+=`<div class="inning-hdr"><span class="ti">Inning ${inn}</span><span class="ln"></span><span class="sc">${score[inn]||''}</span></div>`;
@@ -429,11 +446,12 @@ function render(){
 render();
 
 (function(){
-  const order=[1,3,4,5,6,8,10,11,12,13,14,17,18,19,20,21];
+  const order=[1,5,9,10,11,12,14,15,16,18,19,23,24,25];
   let h='';
   order.forEach(pa=>{const d=PITCH[pa]; if(d.ev==null) return;
-    const dd=DATA.find(x=>x.pa===pa); const isHit=dd.rt==='hit';
-    h+=`<div class="bbpip ${isHit?'hit':'out'} ${evClass(d.ev)}"><span class="ev">${d.ev}</span><span style="opacity:.6">${isHit?'HIT':'out'}</span></div>`;});
+    const dd=DATA.find(x=>x.pa===pa); const isHR=dd.rt==='hr'; const isHit=dd.rt==='hit';
+    const cls=isHR?'hr':(isHit?'hit':'out');
+    h+=`<div class="bbpip ${cls} ${evClass(d.ev)}"><span class="ev">${d.ev}</span><span style="opacity:.6">${isHR?'HR':(isHit?'HIT':'out')}</span></div>`;});
   document.getElementById('bbrow').innerHTML=h;
 })();
 
